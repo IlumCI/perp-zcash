@@ -156,6 +156,12 @@ function onSortBy(value: MarketHeaderType) {
 }
 
 function verifyMarketIsPartOfType(market: UiMarketWithToken) {
+  // ZEC-only venue: never surface a market outside the verified allowlist
+  // (curated to the single Zcash perp), regardless of category or search.
+  if (!market.isVerified) {
+    return false
+  }
+
   if (marketsToHideFromSelection.includes(market.marketId)) {
     return false
   }

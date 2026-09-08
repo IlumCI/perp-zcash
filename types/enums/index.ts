@@ -230,7 +230,7 @@ export enum LiquidityBotField {
 
 export enum DefaultMarket {
   Spot = 'inj-usdt',
-  Perpetual = 'btc-usdt-perp',
+  Perpetual = 'zec-usdt-perp',
   PerpetualTestnet = 'btc-usdt-perp-pyth'
 }
 

@@ -101,7 +101,7 @@ onWalletConnected(async () => {
     if (!route.path.startsWith(TradeSubPagePath.Stocks)) {
       return navigateTo({
         name: 'futures-slug',
-        params: { slug: 'btc-usdt-perp' },
+        params: { slug: 'zec-usdt-perp' },
         ...(routeQuery && { query: routeQuery })
       })
     } else {
@@ -199,16 +199,18 @@ provide(IsRWAMarketOpenKey, isRWAMarketOpen)
 </script>
 
 <template>
-  <PartialsTradeLayout v-if="market" v-bind="{ market }">
-    <template #form>
-      <PartialsTradeFuturesForm />
-    </template>
+  <div v-if="market" v-bind="{ market }">
+    <PartialsTradeLayout v-bind="{ market }">
+      <template #form>
+        <PartialsTradeFuturesForm />
+      </template>
 
-    <template #orders>
-      <PartialsTradeFuturesOrders />
-    </template>
-  </PartialsTradeLayout>
+      <template #orders>
+        <PartialsTradeFuturesOrders />
+      </template>
+    </PartialsTradeLayout>
 
-  <ModalsIAssets />
-  <ModalsMarketRestricted v-if="market" v-bind="{ market }" />
+    <ModalsIAssets />
+    <ModalsMarketRestricted v-bind="{ market }" />
+  </div>
 </template>

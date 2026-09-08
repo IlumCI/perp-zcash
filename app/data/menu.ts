@@ -1,10 +1,5 @@
 import { NuxtUiIcons } from '@shared/types'
-import {
-  MainPage,
-  TradeSubPage,
-  PortfolioSubPage,
-  LeaderboardSubPage
-} from '@/types'
+import { MainPage, TradeSubPage, PortfolioSubPage } from '@/types'
 import type { MenuItem } from '@/types'
 
 export const getMoreMenu = () => [
@@ -30,23 +25,16 @@ export const getMoreMenu = () => [
 ]
 
 export const TRADING_OPTIONS = [
-  {
-    label: 'navigation.markets',
-    to: { name: MainPage.Markets }
-  },
+  // ZEC-only venue: a single Zcash perpetual market is the whole venue,
+  // so the multi-market "Markets" and "Stocks" entries are removed and
+  // "Trade" points directly at the ZEC perp.
   {
     label: 'navigation.trade',
     to: {
-      name: TradeSubPage.Spot,
-      params: { slug: 'inj-usdt' }
+      name: TradeSubPage.Futures,
+      params: { slug: 'zec-usdt-perp' }
     }
   },
-  // Trading bots removed in this build
-  {
-    label: 'navigation.stocks',
-    to: { name: TradeSubPage.Stocks }
-  },
-  // Leaderboard removed in this build
   {
     isOpenDepositModal: true,
     label: 'navigation.more.deposit'

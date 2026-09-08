@@ -6,7 +6,7 @@ import type { UiMarketAndSummaryWithVolumeInUsd } from '@/types'
 const jsonStore = useSharedJsonStore()
 const exchangeStore = useExchangeStore()
 
-const HOT_MARKETS_SLUGS = ['inj-usdt', 'btc-usdt-perp', 'weth-usdt', 'sol-usdt']
+const HOT_MARKETS_SLUGS = ['zec-usdt-perp']
 
 const props = withDefaults(
   defineProps<{

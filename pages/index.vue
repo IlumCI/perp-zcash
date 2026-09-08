@@ -1,4 +1,18 @@
 <script lang="ts" setup>
+import { TradeSubPage } from '@/types'
+
+// ZEC-only venue: land directly on the Zcash perpetual trading page instead of
+// a multi-market landing page.
+definePageMeta({
+  middleware: [
+    () =>
+      navigateTo(
+        { name: TradeSubPage.Futures, params: { slug: 'zec-usdt-perp' } },
+        { redirectCode: 302 }
+      )
+  ]
+})
+
 useHead({
   bodyAttrs: {
     class: 'dark:bg-[#00001A]'
