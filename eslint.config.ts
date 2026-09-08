@@ -88,4 +88,8 @@ export default withNuxt({
       }
     ]
   }
+}).append({
+  // Standalone sub-projects with their own toolchains (relayer: its own tsc;
+  // contracts: cargo). Not linted by the app's config.
+  ignores: ['relayer/**', 'contracts/**']
 })

@@ -1,0 +1,27 @@
+[package]
+name = "zec-perps-anchor"
+version = "0.1.0"
+edition = "2021"
+description = "Commitment anchor for ZEC Perps shielded orders (Injective testnet)"
+license = "Apache-2.0"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+cosmwasm-std = "2.1"
+cosmwasm-schema = "2.1"
+cw-storage-plus = "2.0"
+schemars = "0.8"
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+thiserror = "1.0"
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+debug = false
+panic = "abort"
+incremental = false
+overflow-checks = true
+lto = true
+rpath = false
