@@ -48,6 +48,9 @@ async function getChain() {
 
   chain = { sdk, address, subaccountId, broadcaster }
 
+  console.log(`executor: relayer address=${address}`)
+  console.log(`executor: omnibus subaccountId=${subaccountId} (fund USDT here)`)
+
   return chain
 }
 
