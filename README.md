@@ -62,6 +62,13 @@ funding) need no wallet; placing a real trade needs USDT on Injective.
 > after install, fetch the same files over `curl` (see `scripts/*.ts` for the
 > `injective-lists` URLs) or run on an unproxied network.
 
+## Deployment
+
+Deploy the transparent ZEC venue (mainnet) via Docker SSR (repo-root
+`Dockerfile`), a Node host (`node .output/server/index.mjs`), or a static export.
+Config is build-time (`VITE_*` is inlined); set `VITE_FEE_RECIPIENT` + your own
+endpoints to earn the builder fee share. Full guide: `docs/DEPLOY.md`.
+
 ## Shielded order flow
 
 Enable the **Shielded** toggle in the futures order form. Two modes

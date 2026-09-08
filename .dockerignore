@@ -1,3 +1,13 @@
 .git
 node_modules
+.nuxt
+.output
+dist
+.env
+.env.*
+docs/demo
+relayer/node_modules
+relayer/.env
+*.log
 Dockerfile
+.github/Dockerfile
