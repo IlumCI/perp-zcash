@@ -446,7 +446,8 @@ export enum DerivativesTradeFormField {
   AmountOption = 'amountOption',
   TriggerPrice = 'triggerPrice',
   isTpSlEnabled = 'isTpSlEnabled',
-  BypassPriceWarning = 'bypassPriceWarning'
+  BypassPriceWarning = 'bypassPriceWarning',
+  Shielded = 'shielded'
 }
 
 export enum TradeField {

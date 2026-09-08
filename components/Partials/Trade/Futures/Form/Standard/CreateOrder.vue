@@ -29,6 +29,7 @@ const jsonStore = useSharedJsonStore()
 const modalStore = useSharedModalStore()
 const derivativeStore = useDerivativeStore()
 const sharedWalletStore = useSharedWalletStore()
+const shieldedStore = useShieldedStore()
 const notificationStore = useSharedNotificationStore()
 const derivativeFormValues = useFormValues<DerivativesTradeForm>()
 const { t } = useLang()
@@ -84,6 +85,12 @@ const limitPrice = computed(
 
 const isOrderTypeReduceOnly = computed(
   () => !!derivativeFormValues.value[DerivativesTradeFormField.ReduceOnly]
+)
+
+const isShielded = computed(
+  () =>
+    shieldedStore.isEnabled &&
+    !!derivativeFormValues.value[DerivativesTradeFormField.Shielded]
 )
 
 const isAuthorized = computed(() => {
@@ -259,6 +266,10 @@ async function submit() {
 }
 
 async function submitLimitOrder() {
+  if (isShielded.value) {
+    return submitShieldedLimitOrder()
+  }
+
   const { valid } = await validate()
 
   if (!valid) {
@@ -302,6 +313,12 @@ async function submitLimitOrder() {
 }
 
 function submitMarketOrder() {
+  if (isShielded.value) {
+    submitShieldedMarketOrder()
+
+    return
+  }
+
   status.setLoading()
 
   let err: Error
@@ -427,6 +444,88 @@ function submitStopMarketOrder() {
     })
 }
 
+async function submitShieldedLimitOrder() {
+  const { valid } = await validate()
+
+  if (!valid) {
+    return
+  }
+
+  status.setLoading()
+
+  shieldedStore
+    .sealAndSchedule({
+      params: {
+        marketId: derivativeMarket.value.marketId,
+        slug: derivativeMarket.value.slug,
+        side: derivativeFormValues.value[
+          DerivativesTradeFormField.Side
+        ] as TradeDirection,
+        price: limitPrice.value.toFixed(),
+        quantity: props.quantity.toFixed(),
+        margin: props.margin.toFixed(),
+        reduceOnly: isOrderTypeReduceOnly.value
+      },
+      execute: () =>
+        derivativeStore.submitLimitOrder({
+          margin: props.margin,
+          price: limitPrice.value,
+          quantity: props.quantity,
+          market: derivativeMarket?.value,
+          orderSide: orderTypeToSubmit.value,
+          reduceOnly: isOrderTypeReduceOnly.value
+        })
+    })
+    .then(() => {
+      notificationStore.success({
+        title: t('trade.shielded.sealedToast.title'),
+        description: t('trade.shielded.sealedToast.description')
+      })
+      resetForm({ values: currentFormValues.value })
+    })
+    .catch($onError)
+    .finally(() => status.setIdle())
+}
+
+function submitShieldedMarketOrder() {
+  status.setLoading()
+
+  shieldedStore
+    .sealAndSchedule({
+      params: {
+        marketId: derivativeMarket.value.marketId,
+        slug: derivativeMarket.value.slug,
+        side: derivativeFormValues.value[
+          DerivativesTradeFormField.Side
+        ] as TradeDirection,
+        price: props.worstPrice.toFixed(),
+        quantity: props.quantity.toFixed(),
+        margin: props.margin.toFixed(),
+        reduceOnly: isOrderTypeReduceOnly.value
+      },
+      execute: () =>
+        derivativeStore.submitMarketOrder({
+          margin: props.margin,
+          quantity: props.quantity,
+          stopLoss: stopLossValue.value,
+          market: derivativeMarket?.value,
+          takeProfit: takeProfitValue.value,
+          orderSide: orderTypeToSubmit.value,
+          reduceOnly: isOrderTypeReduceOnly.value,
+          price: new BigNumberInBase(props.worstPrice)
+        })
+    })
+    .then(() => {
+      notificationStore.success({
+        title: t('trade.shielded.sealedToast.title'),
+        description: t('trade.shielded.sealedToast.description')
+      })
+      resetForm({ values: currentFormValues.value })
+    })
+    .catch($onError)
+    .finally(() => status.setIdle())
+}
+
 function showAutosignCta() {
   if ([Wallet.Magic, Wallet.Turnkey].includes(sharedWalletStore.wallet)) {
     return
@@ -504,6 +603,8 @@ function showAutosignCta() {
         {{ $t('trade.postOnlyWarning') }}
       </p>
     </div>
+
+    <PartialsTradeFuturesShieldedSealedOrders />
 
     <ModalsClosedRWAMarket
       v-bind="{ worstPrice: worstPrice.toString() }"

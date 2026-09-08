@@ -75,6 +75,8 @@ function addTpSl(position: PositionV2) {
 
         <PartialsTradeFuturesFormStandardAdvancedSettingsReduceOnly />
 
+        <PartialsTradeFuturesFormStandardAdvancedSettingsShielded />
+
         <PartialsTradeFuturesFormStandardAdvancedSettingsBypassWarning
           v-if="
             [

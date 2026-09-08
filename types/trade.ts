@@ -154,6 +154,7 @@ export type DerivativesTradeForm = {
   [DerivativesTradeFormField.Leverage]: string
   [DerivativesTradeFormField.StopLoss]: string
   [DerivativesTradeFormField.PostOnly]: boolean
+  [DerivativesTradeFormField.Shielded]: boolean
   [DerivativesTradeFormField.LimitPrice]: string
   [DerivativesTradeFormField.TakeProfit]: string
   [DerivativesTradeFormField.ReduceOnly]: boolean

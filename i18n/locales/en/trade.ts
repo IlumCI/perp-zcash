@@ -9,6 +9,26 @@ export default {
     max: 'Max',
     size: 'Size',
     info: 'Info',
+    shielded: {
+      label: 'Shielded order',
+      localHint:
+        'Sealed client-side and withheld from the public order book until a short reveal window elapses, then submitted from your wallet. Hides your order pre-trade; your identity and resulting position remain public on-chain.',
+      relayerHint:
+        'Sealed and sent to the relayer, which batches, anchors and executes it from a pooled account, adding identity unlinkability. Positions on-chain remain public and the relayer is trusted during the reveal window.',
+      sealedOrders: 'Sealed orders',
+      revealIn: 'reveals in {s}s',
+      sealedToast: {
+        title: 'Order sealed',
+        description:
+          'Your order is committed and hidden until the reveal window elapses.'
+      },
+      status: {
+        sealed: 'Sealed',
+        revealing: 'Revealing',
+        submitted: 'Submitted',
+        failed: 'Failed'
+      }
+    },
     long: 'Long',
     sell: 'Sell',
     spot: 'Spot',
