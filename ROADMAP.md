@@ -85,7 +85,15 @@ Scope:
 Acceptance: client attaches a proof at reveal; relayer/contract rejects invalid
 proofs; in-browser proving time measured and acceptable (target < a few seconds).
 
-Grounding: Merkle inclusion + Poseidon; Noir/UltraHonk vs Groth16 trade-offs.
+Grounding and 2025-2026 reality (browser proving is the binding constraint):
+Noir + UltraHonk (`bb.js`) is currently the only browser-viable proving stack
+(~2 s on an M1, ~6 s on mid-range Android; SP1/Risc0 OOM in a tab, large Circom
+won't fit) - per the Hyli in-browser benchmark and the FibRace mobile study
+(arXiv:2510.14693). UltraHonk proves ~5-50x faster than Groth16 but costs ~6-7x
+more on-chain gas (proof size); Nova-style folding gives ~4.4x on repeated
+structure (batched note updates); WHIR/FRI is the post-quantum, no-trusted-setup
+successor path. If mobile proving is too heavy, offload with single-server private
+SNARK outsourcing that does not leak the witness (eprint 2025/2113).
 
 ---
 
@@ -99,17 +107,30 @@ closing the in-window front-running surface.
 Scope:
 - Encrypt sealed orders to an n-of-m committee (threshold / delayed encryption)
   so no single party can decrypt before the batch closes; decrypt at reveal.
-- Options: Shutter-style IBE, batched threshold encryption, or a delay/timelock
-  scheme. Evaluate committee liveness and DKG cost.
-- Investigate a Cosmos/Injective-native route (threshold decryption via vote
-  extensions / ABCI 2.0-style hooks) vs an off-chain committee.
+- Recommended stack (most implementable on a BFT/Cosmos chain): stake-weighted
+  batched threshold encryption (Weighted BTE, eprint 2025/2115 - committee weights
+  map to validator stake; quasilinear decryption) with validator key-shares
+  delivered via ABCI++ vote extensions (Cosmos SDK ADR-064), following the TrX
+  BFT-integration pattern (eprint 2025/2032; ~+27 ms / +14% overhead). Osmosis +
+  Anoma's ABCI++ encrypted mempool is the closest Cosmos precedent; Aptos shipped
+  the first production BFT encrypted mempool (Oct 2025).
+- Alternatives: Shutter-style IBE; a delay/time-lock scheme (eprint 2025/2048) to
+  avoid an honest-quorum liveness dependence; a traceable batch scheme (AsiaCCS)
+  if the reveal committee must be auditable for compliance.
+- Constraint: Injective exposes no native privacy primitive as of 2026, so this
+  layer is ours to run, and it protects only the pre-match sealed phase - on-chain
+  fills after matching stay public, consistent with the design.
 
 Acceptance: the relayer cannot read a sealed order's side/price/size before the
 reveal window closes; the committee decrypts at the boundary; liveness under one
 faulty committee member.
 
-Grounding: F3B (2205.08529), Shutter, batched threshold encryption (USENIX Sec
-2024; eprints 2024/669, 2024/1516, 2024/1533), BEAST/BEAT-MEV (2025).
+Grounding: read-first survey SoK: Encrypted Mempools Through the MEV Lens (eprint
+2026/1643) - it also warns that blind ordering can kill same-block auctions that
+return value to users. Plus F3B (2205.08529), Shutter, batched threshold
+encryption (USENIX Sec 2024; eprints 2024/669, 2024/1516, 2024/1533),
+BEAST/BEAT-MEV (2025), and censorship-resistant sealed-bid auctions
+(arXiv:2606.14939).
 
 Risks: committee liveness and key management; added latency to the reveal.
 
@@ -139,10 +160,19 @@ provable; funding and liquidation are correct and fair under privacy.
 
 Grounding: Penumbra (shielded pool + ZSwap batch auctions), Rialto (2111.15259,
 homomorphic commitments + oblivious shuffle), zkFi (2307.00521); perp caveat
-"Reveal, Correct, Then Pay" (2607.13832); ADL design (2512.01112).
+"Reveal, Correct, Then Pay" (2607.13832); ADL design (2512.01112). Best-practice
+note/nullifier engineering: Hardened Shielded Pools (Ethereum privacy team).
+Closest live private-margin precedent: X-Margin ZK cross-margin. Range/solvency
+primitives: SoK ZK Range Proofs (eprint 2024/430). Note: no dedicated academic
+confidential-perp or private-margin-proof construction exists beyond 2607.13832,
+so this milestone is partly novel research - a paper opportunity, not just a build.
 
 Risks: highest. Likely needs a dedicated zk engineering effort and may require
-Injective-side primitives or a co-processor/app-chain. Sequence last.
+Injective-side primitives or a co-processor/app-chain. Sequence last. Critical
+correctness lesson from 2026 incidents (Orchard under-constrained Action audit;
+Hinkal ~$800K double-spend from multiple valid nullifiers per note): pool solvency
+depends on circuit-level note<->nullifier binding, not just on-chain proof
+verification - budget for dedicated circuit audits.
 
 ---
 
@@ -179,6 +209,29 @@ MEV (2212.05111).
   walkthrough for the demo.
 
 ---
+
+## Landscape and frontier (2025-2026)
+
+Closest full-system analogs to study (watch, do not build on yet):
+
+- **Polyhedra DarkDEX** - fully on-chain dark pool for spot + perps: threshold
+  encryption + MPC order flow, recursive ZK for batched settlement and
+  liquidations. The closest public design to this architecture (early-stage).
+- **ShadowBook (Zeko)** - off-chain matcher over a private note-based state with
+  batched ZK-anchored settlement; mirrors our "sealed layer + shielded pool"
+  split (research/testnet).
+- **Renegade** - live institutional MPC+ZK dark pool on Arbitrum (spot); the
+  proof that MPC+ZK matching ships.
+- **GRVT** - production perps on a zkSync Validium; the "privacy-leaning perps
+  that actually shipped" reference.
+- **Sedona + Fhenix CoFHE** - FHE-coprocessor perps (emerging). 2026 FHE
+  bootstrapping fell below ~1 ms on GPUs, reopening confidential margin math that
+  was infeasible in 2024 - a primitive to re-evaluate for M4.
+
+Matching-primitive decision aid (Stellar's 2026 dark-pool comparison): MPC ~100 s
+for 100 parties (scales linearly), FHE ~204 min for 20 parties (non-viable for
+matching today), TEE native but trust-shifted. This is why our design keeps
+matching on Injective and privatizes only the order-flow layer around it.
 
 ## Sequencing
 
