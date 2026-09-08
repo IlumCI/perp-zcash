@@ -1,282 +1,114 @@
-# 🌟 PDAAS
+# ZEC Perps
 
-_Perp Dex As A Service - Powered by Injective_
+A single-market perpetual-futures DEX for trading **Zcash (ZEC)** long and short,
+with an optional **shielded (sealed-order) flow**.
 
-## ✨ Features
+The venue is **Injective**: matching, the order book, funding, and liquidations
+run on Injective's on-chain central-limit order book. This app is a curated,
+rebranded fork of Injective's PDaaS/Helix frontend — the proven perp-DEX stack —
+narrowed to the ZEC/USDT perpetual and extended with a prototype privacy layer.
 
-🚀 **Launch your own DEX in under 5 minutes** - No coding required, just clone and run!
+## What is and isn't real
 
-- **Modern and intuitive design** - Beautiful, responsive UI that users will love
-- **Complete customizability** - Brand it your way, customize colors, logos, and features
-- **Fully integrated with Injective's on-chain order book** - Enterprise-grade trading infrastructure
-- **No liquidity bootstrapping needed** - Start trading immediately with existing on-chain liquidity
-- **Earn 40% of all trading fees** - Earn revenue from every trade on your DEX
+- **The ZEC perpetual is real.** `ZEC/USDT PERP` already exists on Injective
+  mainnet (marketId `0xef0dd633da52cfc21db866b05463c8b43c02265b86bf9257a5d39848cd2eea11`),
+  is oracle-priced (Pyth ZEC/USD), USDT-margined, and cash-settled. This app does
+  not run a matching engine; it trades against Injective's.
+- **Zcash L1 is not the venue.** Zcash has no smart contracts, so — like every
+  other ZEC perp (Hyperliquid, Binance, etc.) — ZEC is the priced asset, not the
+  settlement chain.
+- **The shielded flow is a prototype.** It adds pre-trade secrecy and (via the
+  relayer) identity unlinkability on top of Injective's transparent book. It does
+  not make Injective private. See "Shielded order flow" and its honest limits.
 
----
+## Architecture
 
-## 📚 Getting Started
+```
+Browser (Nuxt 3 / Vue 3)  --@injectivelabs/sdk-ts-->  Injective mainnet
+   ZEC-only UI, wallet, order form                    ZEC/USDT perp CLOB (Pyth oracle)
 
-**Prerequisites:** These instructions assume you have [Git](https://git-scm.com/downloads) installed.
-
-This repository is self‑contained and vendors the shared `injective-ui` layer, so you can run it without fetching external layers.
-
-### 🚀 One-Click Setup (Recommended)
-
-Clone the repo and run the setup script - it handles everything automatically!
-
-**macOS / Linux:**
-```bash
-git clone git@github.com:InjectiveLabs/pdaas.git
-cd pdaas
-./setup.sh
+Shielded layer (opt-in, additive):
+   app/shielded/  ---- commitment + seal ---->  relayer/ (batch, anchor, execute)
+   store/shielded/  (local commit-reveal)       contracts/anchor/ (testnet audit trail)
 ```
 
-Then just run:
-```bash
-yarn dev
-```
+- **Phase A — ZEC-only venue.** The verified-market map is curated to the single
+  ZEC perp (`components/App/JsonPoll.vue` re-applies this after the upstream CDN
+  refresh), routing/defaults point at ZEC (`pages/index.vue`, `pages/futures.vue`,
+  `types/enums`), and selectors are filtered to verified-only
+  (`components/Common/Headless/Markets.vue`). Config in `app/data/zcash.ts`.
+- **Phase B — minimal rebrand.** Naming, meta, favicons, logo, and copy moved off
+  PDaaS/Helix to a neutral ZEC identity. `Injective` references remain where
+  accurate (the venue is Injective).
+- **Phase C — shielded order flow.** Additive and feature-flagged; the plain
+  transparent path is unchanged.
 
-🎉 **That's it!** Your dev server will be running at `http://127.0.0.1:3000`
+## Getting started
 
-<details>
-<summary><strong>Other platforms and details</strong></summary>
-
-**Windows (PowerShell):**
-```powershell
-git clone git@github.com:InjectiveLabs/pdaas.git
-cd pdaas
-.\setup.ps1
-```
-
-**Alternative (if you already have Node.js installed):**
-```bash
-git clone git@github.com:InjectiveLabs/pdaas.git
-cd pdaas
-npm run setup
-```
-
-The setup script will:
-- ✓ Check and install Node.js 20 (if needed)
-- ✓ Check and install Yarn Classic (if needed)
-- ✓ Copy `.env.example` to `.env`
-- ✓ Install all dependencies
-- ✓ Get you ready to code!
-
-</details>
-
----
-
-<details>
-<summary><strong>📖 Manual Setup (Advanced)</strong></summary>
-
-If you prefer to set things up manually or want more control:
-
-### Prerequisites
-
-#### 1. Install Node.js 20 LTS
-
-**First, check if you already have Node.js:**
-```bash
-node --version
-```
-
-If you see a version number starting with `v20.x.x`, you're good! Skip to step 2.
-
-If you see `command not found` or a different version, install Node.js 20 using one of these methods:
-
-<details>
-<summary><strong>Method 1: Direct Download (easiest for beginners)</strong></summary>
-
-1. Visit [nodejs.org/download](https://nodejs.org/en/download/)
-2. Download the **LTS version 20.x** installer for your operating system:
-   - **macOS:** Download the `.pkg` file and run it
-   - **Windows:** Download the `.msi` file and run it
-   - **Linux:** Use your package manager or download the binary
-3. Follow the installation wizard (accept defaults)
-4. Verify installation:
-   ```bash
-   node --version
-   # Should output: v20.x.x
-   ```
-   ```bash
-   npm --version
-   # Should output: 10.x.x (npm comes with Node.js)
-   ```
-
-</details>
-
-<details>
-<summary><strong>Method 2: Using nvm (recommended for developers - macOS/Linux)</strong></summary>
-
-nvm lets you easily switch between Node.js versions.
-
-1. Install nvm:
-   ```bash
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
-   ```
-2. Close and reopen your terminal, then run:
-   ```bash
-   nvm install 20
-   nvm use 20
-   ```
-3. Verify:
-   ```bash
-   node --version
-   # Should output: v20.x.x
-   ```
-
-</details>
-
-<details>
-<summary><strong>Method 3: Using asdf (for multi-language version management)</strong></summary>
+Prerequisites: Node 20–22, Yarn Classic 1.x.
 
 ```bash
-# Install asdf first if you don't have it
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
-
-# Add to your shell profile (~/.bashrc, ~/.zshrc, etc.)
-echo '. "$HOME/.asdf/asdf.sh"' >> ~/.zshrc
-
-# Restart terminal, then install Node.js
-asdf plugin add nodejs
-asdf install nodejs 20
-asdf local nodejs 20
+yarn install         # postinstall fetches the Injective market/token lists
+cp .env.example .env # VITE_NETWORK=mainnet by default
+yarn dev             # http://127.0.0.1:3000
 ```
 
-</details>
+The app opens on `/futures/zec-usdt-perp`. Read-only views (chart, order book,
+funding) need no wallet; placing a real trade needs USDT on Injective.
 
-<details>
-<summary><strong>Method 4: Using Volta (cross-platform version manager)</strong></summary>
+> Note: `postinstall` runs `yarn fetch:data` to download the market/token JSON
+> into `app/json/` (gitignored). Behind a strict HTTPS proxy that only accepts
+> CONNECT tunnels, the axios-based fetch can fail; if `app/json/**` is missing
+> after install, fetch the same files over `curl` (see `scripts/*.ts` for the
+> `injective-lists` URLs) or run on an unproxied network.
 
-```bash
-# Install Volta
-curl https://get.volta.sh | bash
+## Shielded order flow
 
-# Restart terminal, then install Node.js
-volta install node@20
-```
+Enable the **Shielded** toggle in the futures order form. Two modes
+(`VITE_SHIELDED_MODE`):
 
-</details>
+- **local** (default): client-side commit-reveal. The order is committed
+  (SHA-256 of the order + salt), withheld from the public book for
+  `VITE_SHIELDED_REVEAL_WINDOW_MS`, then submitted from your own wallet. Provides
+  **pre-trade secrecy**; identity/position stay public. No relayer needed.
+- **relayer**: the sealed order is sent to the `relayer/` service, which batches,
+  anchors the commitment, and executes it from a pooled (omnibus) account —
+  adding **identity unlinkability**. Requires running the relayer.
 
-#### 2. Install Yarn Classic (v1.22.22)
+Config: `VITE_SHIELDED_ENABLED`, `VITE_SHIELDED_MODE`, `VITE_RELAYER_URL`,
+`VITE_SHIELDED_REVEAL_WINDOW_MS` (see `.env.example`).
 
-**First, check if you already have Yarn:**
-```bash
-yarn --version
-```
+### Privacy boundary (no overclaiming)
 
-If you see a version starting with `1.x.x`, you're good! Skip to Installation.
+- **Pre-trade secrecy** — real, only until reveal. At reveal the order becomes a
+  normal, public Injective order. In relayer mode the relayer sees plaintext
+  during the window (trusted; threshold encryption is the stretch to remove this).
+- **Identity unlinkability** (relayer/omnibus) — real only with a real anonymity
+  set and pooled deposits; single-trader batches are trivially linkable.
+- **Post-trade position privacy** — not provided. Injective positions, funding,
+  and liquidations are public per subaccount. Real per-trader post-trade privacy
+  needs a shielded collateral pool with zk accounting (roadmap).
+- Injective already runs an in-block frequent batch auction at a uniform clearing
+  price, so this layer targets cross-block secrecy and unlinkability, not
+  intra-block MEV.
 
-If you see `command not found` or version `2.x`/`3.x`/`4.x`, install Yarn Classic:
+## Repository layout
 
-<details>
-<summary><strong>Method 1: Using Corepack (recommended - built into Node.js 16.9+)</strong></summary>
+- `app/shielded/` — client commitment + relayer client.
+- `store/shielded/` — Pinia store: seal-and-schedule (local + relayer).
+- `relayer/` — standalone Node/TS relayer service (dry-run by default). See its README.
+- `contracts/anchor/` — CosmWasm commitment anchor (Injective testnet). See its README.
+- `app/data/zcash.ts` — the ZEC market constants and ZEC-only allowlist.
 
-```bash
-# Enable Corepack
-corepack enable
+## References
 
-# Install Yarn 1.22.22
-corepack prepare yarn@1.22.22 --activate
+Shielded design grounded in: FairTraDEX (arXiv:2202.06384), SPEEDEX
+(arXiv:2111.02719), Rialto (arXiv:2111.15259), F3B threshold mempool
+(arXiv:2205.08529), and the perp-specific "Reveal, Correct, Then Pay"
+(arXiv:2607.13832). Perp mechanics: "Fundamentals of Perpetual Futures"
+(arXiv:2212.06888).
 
-# Verify
-yarn --version
-# Should output: 1.22.22
-```
+## License
 
-> **Note:** If `corepack enable` fails with permission errors, try `sudo corepack enable` (macOS/Linux) or run as Administrator (Windows).
-
-</details>
-
-<details>
-<summary><strong>Method 2: Using npm (if Corepack doesn't work)</strong></summary>
-
-```bash
-# Install globally
-npm install -g yarn@1.22.22
-
-# Verify
-yarn --version
-# Should output: 1.22.22
-```
-
-> **Note:** If you get permission errors on macOS/Linux, try `sudo npm install -g yarn@1.22.22`
-
-</details>
-
-### Installation
-
-1. Clone the repository
-
-```bash
-git clone git@github.com:InjectiveLabs/pdaas.git
-cd pdaas
-```
-
-2. Install dependencies
-
-```bash
-yarn
-```
-
-> **Note:** If you get `yarn: command not found`, go back to the Prerequisites section above and install Yarn.
-
-3. Copy environment variables template and configure for local development
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env` and set your configuration. The vendored `injective-ui` layer is used by default (`LOCAL_LAYER=true`).
-
-4. Run the app locally
-
-```bash
-yarn dev
-```
-
-The dev server will start on `http://127.0.0.1:3000` (configurable via `PORT` and `HOST` in `.env`).
-
-**Notes:**
-- By default, the app uses the **vendored** `injective-ui` layer from this repo (faster, offline-capable).
-- To use the **remote** layer from GitHub instead, set `LOCAL_LAYER=false` in `.env` or run `yarn dev:remote`.
-- For security, the dev server binds to `127.0.0.1` (localhost-only). Use `HOST=0.0.0.0` in `.env` if you need network access.
-
-</details>
-
-## 📖 Documentation
-
-This project is built using Nuxt and TailwindCSS and is powered by the [injective-ts monorepo](https://github.com/InjectiveLabs/injective-ts/). It vendors the shared `injective-ui` layer for a smooth, self‑contained local development experience while retaining upstream Injective compatibility.
-
-You can run the app locally without having to set up a relayer. Use the `public` network in your `VITE_NETWORK` `.env` configuration variable and run `yarn dev`. You can find available networks (predefined endpoint sets) [here](https://github.com/InjectiveLabs/injective-ts/blob/17b1aa5df39d5724baf6262b276980cf722a1cba/packages/networks/src/types.ts#L1). Using these endpoints (from the `public` network) gives 40% of trading fees to the community spend pool. Once you set up private endpoints, you can redirect that 40% to any address you wish.
-
-<details>
-<summary><strong>Deployment & Nuxt3</strong></summary>
-
-### Deployment
-
-You can deploy this Nuxt 3 app using your preferred provider (Vercel, Netlify, Cloudflare Pages, or AWS S3/CloudFront). For static sites, use `yarn generate`; for server rendering, use `nuxi build` and your platform's adapter.
-
-See the official Nuxt docs for deployment guides.
-
-### Nuxt3
-
-This project runs on Nuxt 3. You shouldn't need any migration steps; just follow the Getting Started section above.
-
-</details>
-
----
-
-## 🔓 License
-
-Copyright © 2021 - 2025 Injective Foundation (https://injectivelabs.org/)
-
-Originally released by Injective Foundation under: <br />
-Apache License <br />
-Version 2.0, January 2004 <br />
-http://www.apache.org/licenses/
-
-<p>&nbsp;</p>
-<div align="center">
-  <sub><em>Powering the future of decentralized finance.</em></sub>
-</div>
+Apache-2.0. This is a fork of Injective's PDaaS/Helix frontend.
+Copyright © 2021 - 2025 Injective Foundation (https://injectivelabs.org/).
