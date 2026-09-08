@@ -4,19 +4,19 @@ export default {
     description:
       '가스비 없이 빠르고 안전하게, 기관급 유동성과 함께하는 온체인 거래의 새로운 기준',
     gasFees: '가스비',
-    whyHelix: '왜 Helix인가요?',
+    whyHelix: '왜 ZEC Perps인가요?',
     reimagined: 'Reimagined',
     latestNews: '최신 소식',
     totalVolume: '총 거래량',
     totalMarkets: '전체 마켓',
     startTrading: '트레이딩 시작하기',
-    helixDocs: 'Helix 문서',
+    helixDocs: 'ZEC Perps 문서',
     somethingIsBrewing: '무언가가 준비되고 있어요',
     builtForTheCommunity: '커뮤니티를 위한 설계',
     builtForTheCommunityDescription: '투자자, VC 그리고 내부자없음',
-    downloadHelixMobile: 'IOS 또는 Android용 Helix 모바일 앱을 다운로드하세요',
+    downloadHelixMobile: 'IOS 또는 Android용 ZEC Perps 모바일 앱을 다운로드하세요',
     overview: {
-      title: '왜 Helix인가요?',
+      title: '왜 ZEC Perps인가요?',
       lpRewardsTitle: 'LP 보상',
       tradingBotsTitle: '트레이딩 봇',
       gasFreeTitle: '가스비 없는 거래',
@@ -24,18 +24,18 @@ export default {
       lpRewardsDescription: '유동성을 제공하고 그에 대한 보상을 받으세요.',
       description:
         '최고 수준의 거래소와 같이 설계되었지만, 완전히 탈중앙화되었습니다.',
-      gasFreeDescription: 'Helix에선 가스비 걱정을 하지 않아도 됩니다.',
+      gasFreeDescription: 'ZEC Perps에선 가스비 걱정을 하지 않아도 됩니다.',
       tradingBotsDescription:
         '높은 수준의 스마트 온체인 트레이딩 전략을 클릭 한 번으로 실행해보세요.',
       tradeStocksDescription:
         '암호화폐로 주식 및 실물 자산(RWA)을 더 빠르고 저렴하며 투명하게 거래해보세요.'
     },
     gettingStarted: {
-      title: 'Helix 시작하기',
+      title: 'ZEC Perps 시작하기',
       injectiveBridge: 'Injective 브릿지',
       description: 'Injective에 크립토 자산을 입금하세요',
       description2:
-        '{bridgeLink}를 통해 USDT 및 기타 자산을 Helix로 브릿지하세요.',
+        '{bridgeLink}를 통해 USDT 및 기타 자산을 ZEC Perps로 브릿지하세요.',
       gasRequirement: '거래 수수료를 위해 최소 0.1 INJ를 확보하세요.',
       step1: {
         title: '1단계',
@@ -53,14 +53,14 @@ export default {
       step4: {
         title: '4단계',
         description:
-          '전송이 완료되면 Helix로 돌아와 포트폴리오 페이지에서 잔액을 확인하세요. 이제 거래할 준비가 완료되었습니다!'
+          '전송이 완료되면 ZEC Perps로 돌아와 포트폴리오 페이지에서 잔액을 확인하세요. 이제 거래할 준비가 완료되었습니다!'
       }
     },
     mobile: {
       usp1: '초보자도 쉽게 사용',
       title: '모바일로 간편하게 선물 거래',
       usp2: '암호화폐, 주식, 원자재 및 외환',
-      downloadHelixMobile: 'Helix 모바일 다운로드'
+      downloadHelixMobile: 'ZEC Perps 모바일 다운로드'
     },
     faq: {
       title: '자주 묻는 질문',
@@ -70,9 +70,9 @@ export default {
       here: '여기',
       fullstop: '.',
       accordion1: {
-        title: 'Helix에서는 어떤 기능을 사용할 수 있나요?',
+        title: 'ZEC Perps에서는 어떤 기능을 사용할 수 있나요?',
         featureTitle:
-          'Helix는 고급 성능과 유연성으로 원활하고 강력한 거래 경험을 제공합니다:',
+          'ZEC Perps는 고급 성능과 유연성으로 원활하고 강력한 거래 경험을 제공합니다:',
         stocks: '주식',
         lpRewards: 'LP 리워드',
         commodities: '원자재',
@@ -97,9 +97,9 @@ export default {
           '다양한 {tradingCompetitions}에 참여하고 특별한 보상을 잠금 해제하세요.'
       },
       accordion2: {
-        title: 'Helix에 자산을 어떻게 가져오나요?',
+        title: 'ZEC Perps에 자산을 어떻게 가져오나요?',
         optionTitle:
-          'Helix에서 거래를 시작하려면 먼저 Injective에서 USDT나 INJ 같은 자산을 확보해야 합니다:',
+          'ZEC Perps에서 거래를 시작하려면 먼저 Injective에서 USDT나 INJ 같은 자산을 확보해야 합니다:',
         fiatOnRamps: '법정화폐 On-ramp',
         injectiveBridge: 'Injective 브릿지',
         option1:
@@ -110,14 +110,14 @@ export default {
           '또는 Binance, ByBit 등 다른 중앙화 거래소에서도 입금할 수 있습니다.'
       },
       accordion3: {
-        title: 'Helix에서 암호화폐를 거래하려면 어떻게 해야하나요?',
+        title: 'ZEC Perps에서 암호화폐를 거래하려면 어떻게 해야하나요?',
         stepTitle:
-          'Helix에서의 거래는 빠르고, 허가가 필요 없으며, 가스비가 전혀 없습니다. 시작하는 방법은 다음과 같습니다:',
+          'ZEC Perps에서의 거래는 빠르고, 허가가 필요 없으며, 가스비가 전혀 없습니다. 시작하는 방법은 다음과 같습니다:',
         inj: 'INJ',
         spot: '현물',
         usdt: 'USDT',
         limit: '지정가',
-        helix: 'helixapp.com',
+        helix: 'zecperps.app',
         perpetual: '무기한',
         marketOrder: '시장가 주문',
         videoTutorialHere: '영상 튜토리얼 보기',
@@ -128,26 +128,26 @@ export default {
         cta: '자세한 설명이 필요하신가요? 저희의 단계별 {tutorial}을 확인해보세요.'
       },
       accordion4: {
-        title: 'Helix 모바일 앱이 있나요? 어디에서 다운로드할 수 있나요?',
+        title: 'ZEC Perps 모바일 앱이 있나요? 어디에서 다운로드할 수 있나요?',
         appStore: 'IOS (App Store)',
         playStore: 'Android (Google Play)',
         description:
-          'Helix 모바일은 {appStore} 및 {playStore}에서 무료로 제공됩니다. 앱을 설치하고 지갑을 연결하면 웹에서 보던 것과 동일한 시장 및 잔액을 확인할 수 있습니다.'
+          'ZEC Perps 모바일은 {appStore} 및 {playStore}에서 무료로 제공됩니다. 앱을 설치하고 지갑을 연결하면 웹에서 보던 것과 동일한 시장 및 잔액을 확인할 수 있습니다.'
       },
       accordion5: {
-        title: 'Helix 모바일에서 지갑을 어떻게 연결하나요?',
+        title: 'ZEC Perps 모바일에서 지갑을 어떻게 연결하나요?',
         description: '세 가지 옵션이 있습니다:',
         option1:
-          "QR 코드 스캔 - Helix 모바일을 열고 'Helix 웹에서 QR 코드 스캔'을 탭한 다음, 설정의 Helix 웹 앱에 표시된 QR 코드에 카메라를 맞추세요. (ACM의 AuthZ 모듈 링크)",
+          "QR 코드 스캔 - ZEC Perps 모바일을 열고 'ZEC Perps 웹에서 QR 코드 스캔'을 탭한 다음, 설정의 ZEC Perps 웹 앱에 표시된 QR 코드에 카메라를 맞추세요. (ACM의 AuthZ 모듈 링크)",
         option2:
           '기존 소셜 로그인 사용 - 데스크톱에서 사용하는 것과 동일한 Google 또는 Apple 계정으로 로그인하면 지갑이 즉시 나타납니다.',
         option3:
           '새 지갑 만들기 - 처음부터 시작하고 싶다면 이메일에 연결된 새로운 비수탁형 지갑을 생성하세요.'
       },
       accordion6: {
-        title: 'Helix 모바일은 내 자산을 어떻게 안전하게 보호하나요?',
+        title: 'ZEC Perps 모바일은 내 자산을 어떻게 안전하게 보호하나요?',
         description:
-          'Helix 모바일 앱은 완전한 비수탁형입니다. 개인 키는 사용자의 기기에 저장되고, 트랜잭션은 로컬에서 서명되며, 설정에서 생체 인식 2단계 인증을 추가할 수 있습니다. Helix는 절대로 사용자의 자금이나 시드 구문을 보관하지 않으며, 보안은 웹에서와 동일하게 작동합니다. 소셜 로그인의 경우, 키는 업계 표준 키 관리 솔루션인 Turnkey에 의해 안전하게 저장됩니다.'
+          'ZEC Perps 모바일 앱은 완전한 비수탁형입니다. 개인 키는 사용자의 기기에 저장되고, 트랜잭션은 로컬에서 서명되며, 설정에서 생체 인식 2단계 인증을 추가할 수 있습니다. ZEC Perps는 절대로 사용자의 자금이나 시드 구문을 보관하지 않으며, 보안은 웹에서와 동일하게 작동합니다. 소셜 로그인의 경우, 키는 업계 표준 키 관리 솔루션인 Turnkey에 의해 안전하게 저장됩니다.'
       }
     }
   },
@@ -185,7 +185,7 @@ export default {
   guild: {
     title: '길드',
     description:
-      'Helix 길드는 팀 단위의 트레이딩 대회입니다. 길드의 일원이 되어 함께 승리하세요!',
+      'ZEC Perps 길드는 팀 단위의 트레이딩 대회입니다. 길드의 일원이 되어 함께 승리하세요!',
     rewardDescription1:
       '각 길드에는 두 가지 순위가 있습니다. 하나는 TIA/USDT 마켓에서 길드 전체가 기록한 누적 거래량 기준, 다른 하나는 모든 길드원의 TIA 보유량 가중 평균 기준입니다. 각 항목의 1위 길드는 500 INJ와 5,000 TIA를 받을 수 있습니다.',
     rewardDescription2:
@@ -275,7 +275,7 @@ export default {
       maxCap: '최대 인원',
       title: '길드에 가입하기',
       invitationCode: 'Discord에서 초대 코드 받기',
-      description: 'Helix에서 "{name}" 길드에 가입하여 보상을 나누어 받으세요!'
+      description: 'ZEC Perps에서 "{name}" 길드에 가입하여 보상을 나누어 받으세요!'
     },
     verifyJoinGuild: {
       cta: '가입',
@@ -334,7 +334,7 @@ export default {
         enable: {
           title: '자동 서명',
           description:
-            '활성화하면 각 트랜잭션에 서명하지 않고도 Helix에서 더 원활하게 거래할 수 있습니다.'
+            '활성화하면 각 트랜잭션에 서명하지 않고도 ZEC Perps에서 더 원활하게 거래할 수 있습니다.'
         }
       }
     },
@@ -393,7 +393,7 @@ export default {
     },
     stockTwits: {
       startHere: '여기서 시작',
-      title: '👋 Helix가 처음이신가요?',
+      title: '👋 ZEC Perps가 처음이신가요?',
       description: '쉽게 암호화폐와 토큰화된 주식 거래를 시작해보세요.'
     }
   },
@@ -572,9 +572,9 @@ export default {
       tradesCanBePlace:
         '이 시간 외에도 거래를 진행할 수 있지만, 마켓이 재개될 때까지 가격이 업데이트되지 않습니다.',
       nyseMarketClosedTrade:
-        'Helix의 모든 마켓은 24/7 거래가 가능합니다. 이 마켓은 {nyseClosedTimes}, UTC 14:30부터 21:00까지를 따르며, 야간, 주말, NYSE 거래 휴일에는 폐장됩니다.',
+        'ZEC Perps의 모든 마켓은 24/7 거래가 가능합니다. 이 마켓은 {nyseClosedTimes}, UTC 14:30부터 21:00까지를 따르며, 야간, 주말, NYSE 거래 휴일에는 폐장됩니다.',
       marketClosedTrade:
-        'Helix의 모든 마켓은 24/7 거래가 가능합니다. 이 마켓은 {marketClosedTimes}를 따릅니다. 마켓은 금요일 17시(ET)부터 일요일 17시(ET)까지, CME 거래 휴일, 그리고 월요일부터 목요일까지 17시(ET)부터 18시(ET)까지 폐장됩니다.'
+        'ZEC Perps의 모든 마켓은 24/7 거래가 가능합니다. 이 마켓은 {marketClosedTimes}를 따릅니다. 마켓은 금요일 17시(ET)부터 일요일 17시(ET)까지, CME 거래 휴일, 그리고 월요일부터 목요일까지 17시(ET)부터 18시(ET)까지 폐장됩니다.'
     },
     stats: {
       low: '24시간 최저가',
@@ -614,17 +614,17 @@ export default {
       availableUSDT: '사용 가능한 USDT',
       depositToNeptune: 'Neptune에 입금',
       percentageInReserve: '(15% 예비금)',
-      automatedYields: 'Helix 자동화 수익률',
+      automatedYields: 'ZEC Perps 자동화 수익률',
       withdrawFromNeptune: 'Neptune에서 출금',
       availableUsdt: '≈{peggyUsdt} USDT + {neptuneUsdt} Neptune USDT',
       apyTooltip:
         '이는 Neptune이 현재 USDT 예금에 대해 제공하는 APY입니다. 이 금액은 시간이 지남에 따라 변경됩니다.',
       banner:
-        'Helix는 Neptune과 파트너십을 맺어 애플리케이션을 떠나지 않고도 스테이블코인으로 수익을 얻을 수 있도록 했습니다. {here}를 클릭하여 시작하세요!',
+        'ZEC Perps는 Neptune과 파트너십을 맺어 애플리케이션을 떠나지 않고도 스테이블코인으로 수익을 얻을 수 있도록 했습니다. {here}를 클릭하여 시작하세요!',
       description:
-        '{link}의 USDT 대출 풀에 스테이블코인을 예치하여 Helix를 떠나지 않고도 자동으로 수익을 얻으세요. 거래할 준비가 되면 추가 단계 없이 대출 풀에서 자금이 자동으로 인출됩니다.',
+        '{link}의 USDT 대출 풀에 스테이블코인을 예치하여 ZEC Perps를 떠나지 않고도 자동으로 수익을 얻으세요. 거래할 준비가 되면 추가 단계 없이 대출 풀에서 자금이 자동으로 인출됩니다.',
       warningText:
-        '계속 진행하면 Injective가 통제하거나 제휴하지 않은 애플리케이션에 자금을 예치하게 됩니다. 이 애플리케이션의 사용은 전적으로 귀하의 책임이며, 그로 인해 발생할 수 있는 손실에 대해 Injective를 면책하는 데 동의합니다. 자세한 내용은 Helix {terms}를 참조하세요.'
+        '계속 진행하면 Injective가 통제하거나 제휴하지 않은 애플리케이션에 자금을 예치하게 됩니다. 이 애플리케이션의 사용은 전적으로 귀하의 책임이며, 그로 인해 발생할 수 있는 손실에 대해 Injective를 면책하는 데 동의합니다. 자세한 내용은 ZEC Perps {terms}를 참조하세요.'
     },
     iAssetModal: {
       cta: '트레이딩 시작',
@@ -651,9 +651,9 @@ export default {
       title: '실험적 마켓',
       termsAndCondition: '이용약관',
       description:
-        'Injective에서 이용 가능하지만 Helix에 등재되지 않은 마켓에 액세스하고 있습니다. 마켓 ID가 거래하려는 것인지 확인해주세요.',
+        'Injective에서 이용 가능하지만 ZEC Perps에 등재되지 않은 마켓에 액세스하고 있습니다. 마켓 ID가 거래하려는 것인지 확인해주세요.',
       description2:
-        '계속 진행함으로써 Helix {0}을 읽었고, 동의하며, Helix 사용에 대해 구속받는다는 것을 인정합니다'
+        '계속 진행함으로써 ZEC Perps {0}을 읽었고, 동의하며, ZEC Perps 사용에 대해 구속받는다는 것을 인정합니다'
     },
     sharePnlModal: {
       markPrice: '시장 평균가',
@@ -696,7 +696,7 @@ export default {
     modal: {
       continueToMito: 'Mito로 계속',
       redirect:
-        '볼트 진입 시 Helix에서 수익을 얻을 수 있는 Mito로 리디렉션됩니다.'
+        '볼트 진입 시 ZEC Perps에서 수익을 얻을 수 있는 Mito로 리디렉션됩니다.'
     }
   },
   markets: {
@@ -775,7 +775,7 @@ export default {
       description:
         '지갑 제공업체를 업그레이드하고 있으며 현재 사용 중인 것은 지원이 중단됩니다. 다음을 따라 지갑을 마이그레이션할 것을 강력히 권장합니다',
       migrateDescription:
-        '더 빠르고 간단하며 안전한 로그인 방식으로 업그레이드했습니다. Helix를 계속 사용하려면 업데이트된 지갑을 연결하여 자산을 이동해주세요. 잠시만 시간이 걸리며, 자금은 항상 안전합니다.'
+        '더 빠르고 간단하며 안전한 로그인 방식으로 업그레이드했습니다. ZEC Perps를 계속 사용하려면 업데이트된 지갑을 연결하여 자산을 이동해주세요. 잠시만 시간이 걸리며, 자금은 항상 안전합니다.'
     },
     option: {
       leap: 'Leap',
@@ -805,7 +805,7 @@ export default {
     volume: '거래량',
     totalPoints: '총 포인트',
     lastUpdatedAt: '마지막 업데이트 ',
-    myTotalPoints: 'Helix에서의 총 포인트',
+    myTotalPoints: 'ZEC Perps에서의 총 포인트',
     paginationDetails: '{from}-{to} / 총 {total}',
     description:
       '시즌 1이 종료되었습니다. 포인트에 대한 자세한 정보는 확인하세요',
@@ -832,13 +832,13 @@ export default {
     settlePerpMarketBannerNewLaunch:
       '현재 WTI PERP 마켓을 강제 청산하기 위한 거버넌스 제안이 진행 중입니다. 오픈 포지션을 정리하는 것을 권장하며, 그렇지 않을 경우 청산 시점의 시장 평균가로 포지션이 강제 청산됩니다. 이 마켓이 청산된 후, 새로운 만기 선물 마켓이 출시될 예정입니다.',
     pointsS1Ended:
-      'Helix 포인트 시즌 1이 종료되었습니다. 참여해 주셔서 감사하며, 더 많은 업데이트를 기대해 주세요!',
+      'ZEC Perps 포인트 시즌 1이 종료되었습니다. 참여해 주셔서 감사하며, 더 많은 업데이트를 기대해 주세요!',
     kado: {
       getStarted: '시작하기',
-      title: 'Helix 2.0 소개! 완전히 새로운 트레이딩 경험을 발견하세요.'
+      title: 'ZEC Perps 2.0 소개! 완전히 새로운 트레이딩 경험을 발견하세요.'
     },
     iAssets: {
-      title: 'Helix에서 iAssets 거래',
+      title: 'ZEC Perps에서 iAssets 거래',
       description:
         '암호화폐로 주식을 거래하여 더 빠르고 저렴하며 투명한 거래를 경험하세요 - 전통적인 마켓과 탈중앙화 금융의 힘을 결합했습니다.'
     },
@@ -848,20 +848,20 @@ export default {
       takeSurvey: '설문조사 참여',
       loveFeedback: '여러분의 피드백을 듣고 싶습니다!',
       thankYouEnd:
-        '으로 완료되며, 이 정보는 Helix에서의 향후 경험을 개선하는 데 도움이 됩니다.',
+        '으로 완료되며, 이 정보는 ZEC Perps에서의 향후 경험을 개선하는 데 도움이 됩니다.',
       thankYouBeginning:
-        'Helix를 사용해 주셔서 감사합니다. 저희는 사용자를 위해 지속적으로 제품을 개선하고 있으며 여러분의 의견을 듣고 싶습니다!'
+        'ZEC Perps를 사용해 주셔서 감사합니다. 저희는 사용자를 위해 지속적으로 제품을 개선하고 있으며 여러분의 의견을 듣고 싶습니다!'
     },
     newFeature: {
       cta: 'TradFi 거래',
       title: 'TradFi 주식 지수 소개!',
       description:
-        '처음으로 하나의 통합된 지수를 통해 최대 규모의 상장 주식을 온체인에서 거래하세요. Helix에서만 최저 수수료와 최대 25배 레버리지로 24/7 TradFi에 액세스하세요.'
+        '처음으로 하나의 통합된 지수를 통해 최대 규모의 상장 주식을 온체인에서 거래하세요. ZEC Perps에서만 최저 수수료와 최대 25배 레버리지로 24/7 TradFi에 액세스하세요.'
     },
     leaderboard: {
-      currentCompetitionLink: 'Helix에서 $50K 상금 풀!',
+      currentCompetitionLink: 'ZEC Perps에서 $50K 상금 풀!',
       currentCompetitionTitle:
-        'Helix에서 거래하고 {linkDescription}에서 여러분의 몫을 차지하세요',
+        'ZEC Perps에서 거래하고 {linkDescription}에서 여러분의 몫을 차지하세요',
       gwagon: {
         blog: '블로그',
         ended: '종료됨',
@@ -881,7 +881,7 @@ export default {
         ended: '종료됨',
         title: '자산을 소유하고, 미래를 통제하세요.',
         description:
-          'Helix에서 $50K 상금 풀의 몫을 두고 경쟁하세요. 2025년 2월 21일 오후 6시 UTC부터 2025년 3월 3일 오후 6시 UTC까지, 무작위 추첨을 통해 $50k 상금 풀에서 $1,000을 얻을 기회를 위해 거래할 수 있습니다. $1,000의 거래량마다 한 번의 참가 기회를 얻습니다. 자세한 내용은 {blog}를 방문하세요'
+          'ZEC Perps에서 $50K 상금 풀의 몫을 두고 경쟁하세요. 2025년 2월 21일 오후 6시 UTC부터 2025년 3월 3일 오후 6시 UTC까지, 무작위 추첨을 통해 $50k 상금 풀에서 $1,000을 얻을 기회를 위해 거래할 수 있습니다. $1,000의 거래량마다 한 번의 참가 기회를 얻습니다. 자세한 내용은 {blog}를 방문하세요'
       }
     }
   },
@@ -894,7 +894,7 @@ export default {
     referAndEarn: '추천하고 수익 얻기',
     confirmReferral: '추천 확인',
     referralDetails: '추천 세부사항',
-    scanToJoin: 'Helix에 가입하려면 스캔하거나',
+    scanToJoin: 'ZEC Perps에 가입하려면 스캔하거나',
     yourReferralLink: '내 추천 링크',
     checkAvailability: '사용 가능 여부 확인',
     affiliatedAddress: '제휴 주소',
@@ -936,7 +936,7 @@ export default {
       step2Title: '친구 초대하고 40% 수익',
       step1Title: '추천 링크 공유',
       step2Description: '원하는 만큼 친구를 추가하세요.',
-      description1: '네트워크를 Helix에서 거래하도록 초대하고',
+      description1: '네트워크를 ZEC Perps에서 거래하도록 초대하고',
       step1Description: '고유한 링크를 생성할 수 있습니다.',
       description2: ' 그들의 수수료의 40%를 수수료로 받으세요.',
       step3Description: '암호화폐 지갑으로 즉시 보상을 받으세요.'
@@ -944,9 +944,9 @@ export default {
     shareModal: {
       title: '친구를 초대하세요!',
       customizeYourText: '텍스트 맞춤 설정',
-      description: 'QR 코드를 스캔하고 Helix에서 저와 함께하세요!',
+      description: 'QR 코드를 스캔하고 ZEC Perps에서 저와 함께하세요!',
       defaultText:
-        '보상을 추적하고 언제든지 출금하세요. 네트워크를 Helix에서 거래하도록 초대하고 그들의 수수료의 40%를 수수료로 받으세요.'
+        '보상을 추적하고 언제든지 출금하세요. 네트워크를 ZEC Perps에서 거래하도록 초대하고 그들의 수수료의 40%를 수수료로 받으세요.'
     }
   },
   lpRewards: {
@@ -977,7 +977,7 @@ export default {
     totalRewardsAllTime: '총 보상 (전체 기간)',
     totalRewardsThisRound: '이번 라운드 총 보상',
     totalRewardsOfRound: '라운드 {round}의 총 보상',
-    helixLpRewardsRound: 'Helix LP 보상 라운드 {round}',
+    helixLpRewardsRound: 'ZEC Perps LP 보상 라운드 {round}',
     description: '다양한 현물 마켓에서 거래하여 보상을 받으세요',
     rewardsPending:
       'LP 보상 대기 중: 이 페어의 보상이 현재 처리 중입니다. 라운드 종료 후 최대 일주일까지 펀딩이 걸릴 수 있습니다.',
@@ -1039,7 +1039,7 @@ export default {
       pnl: {
         title: '트레이딩 PnL',
         tooltip:
-          '포트폴리오 페이지의 손익 계산은 2024년 5월 29일 이후 Helix에서 개설 및 종료된 포지션의 대략적인 실현 손익을 반영합니다. 이 계산은 순전히 예시 목적이며 세금 신고 의무에 사용되어서는 안 됩니다.'
+          '포트폴리오 페이지의 손익 계산은 2024년 5월 29일 이후 ZEC Perps에서 개설 및 종료된 포지션의 대략적인 실현 손익을 반영합니다. 이 계산은 순전히 예시 목적이며 세금 신고 의무에 사용되어서는 안 됩니다.'
       }
     },
     balances: {
@@ -1148,7 +1148,7 @@ export default {
       content1: {
         description1: '활성화되면 최대 3일 동안',
         description2:
-          '각 트랜잭션에 서명하지 않고도 Helix를 사용할 수 있습니다.'
+          '각 트랜잭션에 서명하지 않고도 ZEC Perps를 사용할 수 있습니다.'
       },
       content2: {
         title: '다음 용도로 사용할 수 있습니다:',
@@ -1335,7 +1335,7 @@ export default {
     blog: '블로그',
     v2: ' 버전 2.0',
     support: '지원',
-    docs: 'Helix 문서',
+    docs: 'ZEC Perps 문서',
     explorer: '익스플로러',
     resources: '리소스',
     community: '커뮤니티',
@@ -1346,7 +1346,7 @@ export default {
     apiDocumentation: 'API 문서',
     termsAndConditions: '이용약관',
     helixProvides:
-      '참고: Helix는 Injective DAO의 승인에 따라 여러 마켓에서 메이커 리베이트를 제공할 수 있습니다.'
+      '참고: ZEC Perps는 Injective DAO의 승인에 따라 여러 마켓에서 메이커 리베이트를 제공할 수 있습니다.'
   },
   tradingBots: {
     all: '전체',
@@ -1443,9 +1443,9 @@ export default {
     disclaimer:
       '위험 고지사항을 읽고 동의했으며, 매개변수 선택과 투자 결정은 모든 경우에 고객이 단독으로 내린다는 것을 이해합니다.',
     description:
-      'Helix의 자동화 거래를 위한 명령 센터입니다. 활성 봇을 모니터링하고, LP 보상을 추적하며, 다음 움직임을 위한 고성능 커뮤니티 전략을 발견하세요.',
+      'ZEC Perps의 자동화 거래를 위한 명령 센터입니다. 활성 봇을 모니터링하고, LP 보상을 추적하며, 다음 움직임을 위한 고성능 커뮤니티 전략을 발견하세요.',
     topPerformersDescription:
-      '지금 Helix에서 가장 높은 수익률을 기록 중인 전략과 설정을 확인하세요. 성공 데이터를 참고해 내 전략을 개선하거나, 검증된 결과를 바탕으로 새 봇을 시작해보세요.',
+      '지금 ZEC Perps에서 가장 높은 수익률을 기록 중인 전략과 설정을 확인하세요. 성공 데이터를 참고해 내 전략을 개선하거나, 검증된 결과를 바탕으로 새 봇을 시작해보세요.',
     botType: {
       spotGrid: '현물 Grid',
       futuresGrid: '선물 Grid',
@@ -1536,16 +1536,16 @@ export default {
     myStats: '내 통계',
     title: '리더보드',
     viewMore: '더보기',
-    helix: 'helixapp.com',
+    helix: 'zecperps.app',
     timestamp: '타임스탬프',
     startTrading: '트레이딩 시작',
     privacyPolicy: '개인정보 처리방침',
     rulesTermsAndConditions: '규칙, 이용약관',
     refresh: '리더보드는 매시 정각에 새로고침됩니다',
     description:
-      'Helix는 온체인 거래 PnL을 기준으로 상위 트레이더를 순위를 매깁니다',
+      'ZEC Perps는 온체인 거래 PnL을 기준으로 상위 트레이더를 순위를 매깁니다',
     tradeAndWin:
-      '아직 리더보드에 없으신가요? Helix에서 수익성 있는 거래를 하여 자리를 차지하세요!',
+      '아직 리더보드에 없으신가요? ZEC Perps에서 수익성 있는 거래를 하여 자리를 차지하세요!',
     blocked:
       '미국, 영국 및 대회 공식 {terms}에 나열된 기타 특정 국가의 거주자는 대회에 참여하거나 우승할 자격이 없습니다.',
     tabs: {
@@ -1630,7 +1630,7 @@ export default {
     subscribeDescription: 'Notifi를 통해 실시간 알림 받기',
     governanceDescription: '최신 체인 업그레이드에 대한 세부사항 확인',
     footer:
-      'Helix를 더 좋게 만들고 있습니다. 양해해 주셔서 감사하며 곧 돌아오겠습니다!',
+      'ZEC Perps를 더 좋게 만들고 있습니다. 양해해 주셔서 감사하며 곧 돌아오겠습니다!',
     description:
       '몇 가지 업데이트를 진행하고 있습니다. 이 시간 동안 일부 기능을 잠시 사용할 수 없습니다.'
   },
@@ -1683,7 +1683,7 @@ export default {
     stakeTotalToReceiveFullAmount:
       '전체 금액을 받으려면 총 {total} INJ를 스테이킹하세요',
     sunset:
-      'Trade & Earn에 참여해 주셔서 감사합니다! Helix 사용자에게 보상을 제공하도록 설계된 향후 프로그램을 기대해 주세요.',
+      'Trade & Earn에 참여해 주셔서 감사합니다! ZEC Perps 사용자에게 보상을 제공하도록 설계된 향후 프로그램을 기대해 주세요.',
     pendingMaxCampaignRewardsTooltip:
       '이전 에포크에서 배포된 총 INJ 수입니다. 보상 배포는 베스팅 기간 종료 시에 이루어집니다.',
     myRewardPointsTooltip:
@@ -1700,13 +1700,13 @@ export default {
     trustedByTheBest: '최고의 신뢰를 받는',
     heroTitle: '진정한 온체인 기관 금융',
     allRightsReserved: 'Injective Labs. All Rights Reserved.',
-    modalDescription: 'Helix 기관 팀과 직접 연결하세요.',
-    whyFinancialInstitutionsChooseHelix: '금융 기관이 Helix를 선택하는 이유',
+    modalDescription: 'ZEC Perps 기관 팀과 직접 연결하세요.',
+    whyFinancialInstitutionsChooseHelix: '금융 기관이 ZEC Perps를 선택하는 이유',
     heroSubtitle:
       '유일한 완전 탈중앙화 네트워크에서 무제한 암호화폐 자산, 무기한 계약 및 구조화 상품과 거래하세요.',
     permisionedMarketsTitle: '허가된 마켓',
     permisionedMarketsBody:
-      'Helix는 기관급 허가 마켓에 대한 게이트웨이를 독특하게 제공하여 전문적으로 검증된 거래 상대방과 원활하게 상호작용할 수 있게 합니다.',
+      'ZEC Perps는 기관급 허가 마켓에 대한 게이트웨이를 독특하게 제공하여 전문적으로 검증된 거래 상대방과 원활하게 상호작용할 수 있게 합니다.',
     multiAssetSupportTitle: '다중 자산 지원',
     multiAssetSupportBody:
       '여러 블록체인 네트워크에 걸쳐 다양한 온체인 자산, 파생상품 및 구조화 상품에 액세스하세요.',
@@ -1724,7 +1724,7 @@ export default {
       '자산이 절대 통제권을 벗어나지 않도록 보장하는 가장 엄격한 보안 조치를 갖춘 비수탁 플랫폼을 활용하세요.',
     superiorInfrastructureTitle: '우수한 인프라',
     superiorInfrastructureBody:
-      '가장 정교한 금융 기관과 트레이더의 요구에 맞게 설계된 Helix의 맞춤형 인프라를 활용하세요.',
+      '가장 정교한 금융 기관과 트레이더의 요구에 맞게 설계된 ZEC Perps의 맞춤형 인프라를 활용하세요.',
     form: {
       email: '이메일',
       company: '회사',
@@ -1798,17 +1798,17 @@ export default {
         termsAndCondition: '이용약관',
         title: '또한 귀하는 다음과 같이 진술, 보증 및 동의합니다:',
         acknowledge_1:
-          '귀하는 미국(무기한 계약 거래와 관련하여), 영국(투자 전문가가 아닌 경우) 또는 제한 지역(Helix 이용약관에 정의된 대로)에 거주하거나 소재하거나 법인 설립되거나 등록된 대리인을 둔 개인 또는 회사가 아닙니다.',
+          '귀하는 미국(무기한 계약 거래와 관련하여), 영국(투자 전문가가 아닌 경우) 또는 제한 지역(ZEC Perps 이용약관에 정의된 대로)에 거주하거나 소재하거나 법인 설립되거나 등록된 대리인을 둔 개인 또는 회사가 아닙니다.',
         acknowledge_2:
-          '귀하는 미국(무기한 계약 거래와 관련하여), 영국(투자 전문가가 아닌 경우) 또는 제한 지역(Helix 이용약관에 정의된 대로)에 위치하는 동안 현재 또는 향후에 이 사이트에 액세스하거나 helixapp.com을 사용하지 않을 것입니다.',
+          '귀하는 미국(무기한 계약 거래와 관련하여), 영국(투자 전문가가 아닌 경우) 또는 제한 지역(ZEC Perps 이용약관에 정의된 대로)에 위치하는 동안 현재 또는 향후에 이 사이트에 액세스하거나 zecperps.app을 사용하지 않을 것입니다.',
         acknowledge_3:
           '귀하는 제한 지역에서의 물리적 위치를 마스킹하기 위해 가상 사설망 또는 기타 수단을 사용하지 않고 있으며 향후에도 사용하지 않을 것입니다.',
         acknowledge_4:
-          '귀하는 거주하고 있는 관할권의 법률에 따라 이 사이트에 액세스하고 helixapp.com에서 거래할 법적 허가를 받았습니다.',
+          '귀하는 거주하고 있는 관할권의 법률에 따라 이 사이트에 액세스하고 zecperps.app에서 거래할 법적 허가를 받았습니다.',
         acknowledge_5:
           '귀하는 레버리지 사용, 무기한 계약 체결 및 디지털 자산 거래와 관련된 위험을 이해합니다.',
         disclaimerNote:
-          '지갑에 연결함으로써 귀하는 Helix {0}와 Injective Labs {1}를 모두 읽었고, 동의하며, 구속받는다는 것을 인정합니다.'
+          '지갑에 연결함으로써 귀하는 ZEC Perps {0}와 Injective Labs {1}를 모두 읽었고, 동의하며, 구속받는다는 것을 인정합니다.'
       },
       postOnlyMode: {
         title: 'Post Only 모드!',
@@ -1817,9 +1817,9 @@ export default {
       },
       geoRestricted: {
         cta: '알겠습니다',
-        title: 'Helix는 귀하의 지역에서 이용할 수 없습니다.',
+        title: 'ZEC Perps는 귀하의 지역에서 이용할 수 없습니다.',
         description:
-          '규제 요구사항으로 인해 귀하의 지역에서 Helix를 제공할 수 없습니다. 저희 팀은 현지 법률을 완전히 준수하면서 서비스 지역을 확대하기 위해 적극적으로 노력하고 있습니다. 관심을 가져주셔서 감사하며 곧 성장하는 글로벌 커뮤니티에 여러분을 환영할 수 있기를 바랍니다. 미결 포지션이 있으시면 포트폴리오 페이지에서 종료하실 수 있습니다.'
+          '규제 요구사항으로 인해 귀하의 지역에서 ZEC Perps를 제공할 수 없습니다. 저희 팀은 현지 법률을 완전히 준수하면서 서비스 지역을 확대하기 위해 적극적으로 노력하고 있습니다. 관심을 가져주셔서 감사하며 곧 성장하는 글로벌 커뮤니티에 여러분을 환영할 수 있기를 바랍니다. 미결 포지션이 있으시면 포트폴리오 페이지에서 종료하실 수 있습니다.'
       },
       devMode: {
         connect: '연결',

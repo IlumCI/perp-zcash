@@ -42,7 +42,7 @@ export default {
         enable: {
           title: 'Auto Sign',
           description:
-            'Once enabled, you can trade on Helix more smoothly, without signing each transaction.'
+            'Once enabled, you can trade on ZEC Perps more smoothly, without signing each transaction.'
         }
       }
     },
@@ -104,7 +104,7 @@ export default {
     },
     stockTwits: {
       startHere: 'Start here',
-      title: '👋 New to Helix?',
+      title: '👋 New to ZEC Perps?',
       description: 'Start trading crypto & tokenized stocks with ease.'
     }
   }

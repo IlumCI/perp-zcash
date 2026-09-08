@@ -179,9 +179,9 @@ export default {
       tradesCanBePlace:
         'Trades can be placed outside of these times, but prices will not update until the market reopens.',
       nyseMarketClosedTrade:
-        'All markets on Helix can be traded 24/7. It should be noted that this market follows {nyseClosedTimes}, 2:30pm UTC through 9pm UTC, closing on nights, weekends, and NYSE trading holidays.',
+        'All markets on ZEC Perps can be traded 24/7. It should be noted that this market follows {nyseClosedTimes}, 2:30pm UTC through 9pm UTC, closing on nights, weekends, and NYSE trading holidays.',
       marketClosedTrade:
-        'All markets on Helix can be traded 24/7. It should be noted that this market follows {marketClosedTimes}. Markets are closed between 5pm (ET) Friday and 5pm (ET) Sunday, on CME trading holidays, and between 5pm (ET) and 6pm (ET) Monday to Thursday.'
+        'All markets on ZEC Perps can be traded 24/7. It should be noted that this market follows {marketClosedTimes}. Markets are closed between 5pm (ET) Friday and 5pm (ET) Sunday, on CME trading holidays, and between 5pm (ET) and 6pm (ET) Monday to Thursday.'
     },
     stats: {
       low: '24h Low',
@@ -226,17 +226,17 @@ export default {
       availableUSDT: 'Available USDT',
       depositToNeptune: 'Deposit to Neptune',
       percentageInReserve: '(15% in reserve)',
-      automatedYields: 'Helix Automated Yields',
+      automatedYields: 'ZEC Perps Automated Yields',
       withdrawFromNeptune: 'Withdraw from Neptune',
       availableUsdt: '≈{peggyUsdt} USDT + {neptuneUsdt} Neptune USDT',
       apyTooltip:
         'This is the APY currently offered by Neptune on USDT deposits. This amount will change over time.',
       banner:
-        'Helix has partnered with Neptune to make it easy for you to earn yield on your stablecoins without leaving the application. Click {here} to get started!',
+        'ZEC Perps has partnered with Neptune to make it easy for you to earn yield on your stablecoins without leaving the application. Click {here} to get started!',
       description:
-        'Deposit stablecoins into the USDT lending pool on {link} to automatically earn yield without leaving Helix. When you’re ready to make a trade, funds are automatically withdrawn from the lending pool with no extra steps.',
+        'Deposit stablecoins into the USDT lending pool on {link} to automatically earn yield without leaving ZEC Perps. When you’re ready to make a trade, funds are automatically withdrawn from the lending pool with no extra steps.',
       warningText:
-        'By proceeding, you will be depositing funds in an application not controlled by or affiliated with Injective. Your use of this application is entirely at your own risk and you agree to hold Injective harmless for any losses you may suffer as a result. Please see the Helix {terms} for full details.'
+        'By proceeding, you will be depositing funds in an application not controlled by or affiliated with Injective. Your use of this application is entirely at your own risk and you agree to hold Injective harmless for any losses you may suffer as a result. Please see the ZEC Perps {terms} for full details.'
     },
 
     iAssetModal: {
@@ -266,9 +266,9 @@ export default {
       title: 'Experimental market',
       termsAndCondition: 'Terms and Conditions',
       description:
-        'You are accessing a market available on Injective but not listed on Helix. Please check whether the Market ID is the one you would like to trade.',
+        'You are accessing a market available on Injective but not listed on ZEC Perps. Please check whether the Market ID is the one you would like to trade.',
       description2:
-        'By proceeding, you acknowledge that you have read, that you agree to, and that you are bound by the Helix {0} as to any use you make of Helix'
+        'By proceeding, you acknowledge that you have read, that you agree to, and that you are bound by the ZEC Perps {0} as to any use you make of ZEC Perps'
     },
 
     sharePnlModal: {

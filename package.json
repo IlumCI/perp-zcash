@@ -1,9 +1,9 @@
 {
-  "name": "injective-pdaas",
+  "name": "zec-perps",
   "version": "1.10.3",
-  "description": "Injective PDaaS - Perp Dex As A Service",
+  "description": "ZEC Perps - Trade Zcash perpetual futures on Injective",
   "license": "Apache-2.0",
-  "author": "@InjectiveLabs",
+  "author": "ZEC Perps",
   "engines": {
     "node": ">=20 <23"
   },

@@ -38,7 +38,7 @@ export default {
       injectiveBridge: 'Injective Bridge',
       description: 'Deposit crypto assets to Injective ',
       description2:
-        'Bridge USDT and other assets into Helix via the {bridgeLink}.',
+        'Bridge USDT and other assets into ZEC Perps via the {bridgeLink}.',
       gasRequirement:
         'Make sure you get at least 0.1 INJ to pay for the transaction fee.',
       step1: {
@@ -57,7 +57,7 @@ export default {
       step4: {
         title: 'Step 4',
         description:
-          'Once complete, return to Helix and check your Balances on the Portfolio page. You are ready to trade!'
+          'Once complete, return to ZEC Perps and check your Balances on the Portfolio page. You are ready to trade!'
       }
     },
 
@@ -72,9 +72,9 @@ export default {
       title: 'Frequently Asked Questions',
 
       accordion1: {
-        title: 'What features does Helix offer?',
+        title: 'What features does ZEC Perps offer?',
         featureTitle:
-          'Helix offers a seamless and powerful trading experience with advanced features and flexibility:',
+          'ZEC Perps offers a seamless and powerful trading experience with advanced features and flexibility:',
 
         stocks: 'stocks',
         lpRewards: 'LP rewards',
@@ -102,9 +102,9 @@ export default {
       },
 
       accordion2: {
-        title: 'How do I get assets onto Helix?',
+        title: 'How do I get assets onto ZEC Perps?',
         optionTitle:
-          'To start trading on Helix, you’ll first need to get assets like USDT or INJ on Injective:',
+          'To start trading on ZEC Perps, you’ll first need to get assets like USDT or INJ on Injective:',
 
         fiatOnRamps: 'fiat on-ramps',
         injectiveBridge: 'Injective Bridge',
@@ -117,15 +117,15 @@ export default {
       },
 
       accordion3: {
-        title: 'How do I trade cryptocurrencies on Helix?',
+        title: 'How do I trade cryptocurrencies on ZEC Perps?',
         stepTitle:
-          "Trading on Helix is fast, permissionless, and completely gas-free. Here's how to get started:",
+          "Trading on ZEC Perps is fast, permissionless, and completely gas-free. Here's how to get started:",
 
         inj: 'INJ',
         spot: 'Spot',
         usdt: 'USDT',
         limit: 'limit',
-        helix: 'helixapp.com',
+        helix: 'zecperps.app',
         perpetual: 'Perpetual',
         marketOrder: 'market order',
         videoTutorialHere: 'video tutorial here',
@@ -140,17 +140,17 @@ export default {
       accordion4: {
         appStore: 'iOS (App Store)',
         playStore: 'Android (Google Play)',
-        title: 'Is there a Helix Mobile app, and where can I get it?',
+        title: 'Is there a ZEC Perps Mobile app, and where can I get it?',
         description:
-          'Helix Mobile is free on {appStore} and {playStore}. Install the app, connect your wallet, and you’ll see the same markets and balances you see on the web version.'
+          'ZEC Perps Mobile is free on {appStore} and {playStore}. Install the app, connect your wallet, and you’ll see the same markets and balances you see on the web version.'
       },
 
       accordion5: {
         description: 'You have three options:',
-        title: 'How do I connect my wallet on Helix Mobile?',
+        title: 'How do I connect my wallet on ZEC Perps Mobile?',
 
         option1:
-          'Scan a QR code - open Helix Mobile, tap “Scan QR code on Helix web,” and point your camera at the QR code shown on the Helix web app in settings. (link to AuthZ module in ACM)',
+          'Scan a QR code - open ZEC Perps Mobile, tap “Scan QR code on ZEC Perps web,” and point your camera at the QR code shown on the ZEC Perps web app in settings. (link to AuthZ module in ACM)',
         option2:
           'Use your existing social login - sign in with the same Google or Apple account you use on desktop and your wallet appears instantly.',
         option3:
@@ -158,9 +158,9 @@ export default {
       },
 
       accordion6: {
-        title: ' How does Helix Mobile keep my assets secure?',
+        title: ' How does ZEC Perps Mobile keep my assets secure?',
         description:
-          'The Helix Mobile app is fully non-custodial. Private keys stay on your device, transactions are signed locally, and you can add biometric two-factor verification in settings. Helix never holds your funds or seed phrase - security works exactly as it does on the web. For social login, keys are securely stored by Turnkey, the industry standard for key management.'
+          'The ZEC Perps Mobile app is fully non-custodial. Private keys stay on your device, transactions are signed locally, and you can add biometric two-factor verification in settings. ZEC Perps never holds your funds or seed phrase - security works exactly as it does on the web. For social login, keys are securely stored by Turnkey, the industry standard for key management.'
       }
     }
   }

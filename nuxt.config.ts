@@ -80,7 +80,7 @@ export default defineNuxtConfig({
       process.env.VITE_BASE_URL &&
         !process.env.VITE_BASE_URL.includes('localhost')
         ? process.env.VITE_BASE_URL
-        : 'https://pdaas.injective.com'
+        : 'https://zecperps.app'
   },
 
   colorMode: {

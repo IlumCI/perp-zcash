@@ -10,7 +10,7 @@ export default {
     referAndEarn: 'Refer and Earn',
     confirmReferral: 'Confirm Referral',
     referralDetails: 'Referral Details',
-    scanToJoin: 'Scan to Join Helix or',
+    scanToJoin: 'Scan to Join ZEC Perps or',
     yourReferralLink: 'Your Referral Link',
     checkAvailability: 'Check Availability',
     affiliatedAddress: 'Affiliated Address',
@@ -53,7 +53,7 @@ export default {
       step2Title: 'Invite friends earn 40%',
       step1Title: 'Share your referral link',
       step2Description: 'Add as many friends you want.',
-      description1: 'Invite your network to trade on Helix',
+      description1: 'Invite your network to trade on ZEC Perps',
       step1Description: 'You can generate your unique link.',
       description2: ' and earn 40% of their fees as commission.',
       step3Description: 'Receive your rewards instantly in your crypto wallet.'
@@ -61,9 +61,9 @@ export default {
     shareModal: {
       title: 'Invite Your Friends!',
       customizeYourText: 'Customize your text',
-      description: 'Scan QR code and join me at Helix!',
+      description: 'Scan QR code and join me at ZEC Perps!',
       defaultText:
-        'Track your rewards, and cash out anytime. Invite your network to trade on Helix and earn 40% of their fees as commission.'
+        'Track your rewards, and cash out anytime. Invite your network to trade on ZEC Perps and earn 40% of their fees as commission.'
     }
   }
 }

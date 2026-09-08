@@ -58,7 +58,7 @@ export default {
       [PortfolioChartType.Pnl]: {
         title: 'Trading PnL',
         tooltip:
-          'The profit and loss calculations on the portfolio page reflect the approximate realized profit and loss from positions opened and closed on Helix since May 29, 2024. This calculation  is purely for illustrative purposes and should not be used for any tax reporting obligations.'
+          'The profit and loss calculations on the portfolio page reflect the approximate realized profit and loss from positions opened and closed on ZEC Perps since May 29, 2024. This calculation  is purely for illustrative purposes and should not be used for any tax reporting obligations.'
       }
     },
 
@@ -177,7 +177,7 @@ export default {
       durationDescription: 'Auto sign is active for 3 days.',
       pageTitle: 'Auto-Sign: Approve Transactions Automatically',
       content1: {
-        description1: 'Once enabled, you can use Helix without signing',
+        description1: 'Once enabled, you can use ZEC Perps without signing',
         description2: 'each transaction for up to 3 days.'
       },
       content2: {

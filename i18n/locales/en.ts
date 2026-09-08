@@ -102,17 +102,17 @@ export default {
         termsAndCondition: 'Terms and Conditions',
         title: 'In addition, you hereby represent, warrant, and agree that:',
         acknowledge_1:
-          'You are not a person or company who is a resident of, is located, incorporated, or has a registered agent in, the United States of America (with respect to trading perpetual contracts), the UK (unless you are an Investment Professional), or a Restricted Territory (as defined in the Helix Terms and Conditions).',
+          'You are not a person or company who is a resident of, is located, incorporated, or has a registered agent in, the United States of America (with respect to trading perpetual contracts), the UK (unless you are an Investment Professional), or a Restricted Territory (as defined in the ZEC Perps Terms and Conditions).',
         acknowledge_2:
-          'You will not now or in the future access this site or use helixapp.com while located in the United States of America (with respect to trading perpetual contracts), the UK (unless you are an Investment Professional), or a Restricted Territory (as defined in the Helix Terms and Conditions).',
+          'You will not now or in the future access this site or use zecperps.app while located in the United States of America (with respect to trading perpetual contracts), the UK (unless you are an Investment Professional), or a Restricted Territory (as defined in the ZEC Perps Terms and Conditions).',
         acknowledge_3:
           'You are not using, and will not in the future use, a virtual private network or other means to mask your physical location from a Restricted Territory.',
         acknowledge_4:
-          'You are lawfully permitted to access this site and trade on helixapp.com under the laws of the jurisdiction in which you reside and are located.',
+          'You are lawfully permitted to access this site and trade on zecperps.app under the laws of the jurisdiction in which you reside and are located.',
         acknowledge_5:
           'You understand the risks associated with using leverage, entering into perpetual contracts, and trading in digital assets.',
         disclaimerNote:
-          'By connecting to a wallet, you acknowledge that you have read, that you agree to, and that you are bound by both the Helix {0} and the Injective Labs {1}.'
+          'By connecting to a wallet, you acknowledge that you have read, that you agree to, and that you are bound by both the ZEC Perps {0} and the Injective Labs {1}.'
       },
 
       postOnlyMode: {

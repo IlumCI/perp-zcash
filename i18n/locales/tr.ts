@@ -4,20 +4,20 @@ export default {
     description:
       'Kurumsal likidite ile güvenli, hızlı, gaz ücreti olmayan zincir üstü işlem',
     gasFees: 'Gaz Ücretleri',
-    whyHelix: 'Neden Helix?',
+    whyHelix: 'Neden ZEC Perps?',
     reimagined: 'Yeniden Tasarlandı',
     latestNews: 'Son Haberler',
     totalVolume: 'Toplam Hacim',
     totalMarkets: 'Toplam Piyasalar',
     startTrading: 'İşlem Yapmaya Başla',
-    helixDocs: 'Helix Dokümantasyonu',
+    helixDocs: 'ZEC Perps Dokümantasyonu',
     somethingIsBrewing: 'Bir Şeyler Oluyor',
     builtForTheCommunity: 'Topluluk İçin Tasarlandı',
     builtForTheCommunityDescription:
       'Yatırımcı yok, risk sermayesi yok, saçmalık yok.',
-    downloadHelixMobile: 'iOS veya Android için Helix Mobil uygulamasını indir',
+    downloadHelixMobile: 'iOS veya Android için ZEC Perps Mobil uygulamasını indir',
     overview: {
-      title: 'Neden Helix?',
+      title: 'Neden ZEC Perps?',
       lpRewardsTitle: 'LP Ödülleri',
       tradingBotsTitle: 'Alım Satım Botları',
       gasFreeTitle: 'Gaz Ücreti Olmadan İşlem',
@@ -26,18 +26,18 @@ export default {
       description:
         'Üst düzey bir borsa olarak inşa edildi, ancak tamamen merkeziyetsiz.',
       gasFreeDescription:
-        "Helix'te gaz ücretlerini hiç dert etmeyin. Sıfır gaz, her zaman.",
+        "ZEC Perps'te gaz ücretlerini hiç dert etmeyin. Sıfır gaz, her zaman.",
       tradingBotsDescription:
         'Tek tıkla gelişmiş akıllı zincir üstü işlem stratejileri dağıtın.',
       tradeStocksDescription:
         'Hisse senetleri ve Gerçek Dünya Varlıkları (RWA) ile kripto kullanarak daha hızlı, daha ucuz ve daha şeffaf işlemler yapın.'
     },
     gettingStarted: {
-      title: "Helix'te Başlarken",
+      title: "ZEC Perps'te Başlarken",
       injectiveBridge: 'Injective Köprüsü',
       description: "Kripto varlıkları Injective'a yatırın ",
       description2:
-        "USDT ve diğer varlıkları {bridgeLink} üzerinden Helix'e köprüleyin.",
+        "USDT ve diğer varlıkları {bridgeLink} üzerinden ZEC Perps'e köprüleyin.",
       gasRequirement:
         'İşlem ücretini ödemek için en az 0.1 INJ aldığınızdan emin olun.',
       step1: {
@@ -56,14 +56,14 @@ export default {
       step4: {
         title: 'Adım 4',
         description:
-          "İşlem tamamlandığında, Helix'e dönün ve Portföy sayfasında Bakiyelerinizi kontrol edin. İşlem yapmaya hazırsınız!"
+          "İşlem tamamlandığında, ZEC Perps'e dönün ve Portföy sayfasında Bakiyelerinizi kontrol edin. İşlem yapmaya hazırsınız!"
       }
     },
     mobile: {
       usp1: 'Yeni Başlayanlar İçin Uygun',
       title: 'Cebinizden Perpetual İşlemler Yapın',
       usp2: 'Kripto, Hisseler, Emtialar ve Döviz',
-      downloadHelixMobile: "Helix Mobil'i İndir"
+      downloadHelixMobile: "ZEC Perps Mobil'i İndir"
     },
     faq: {
       title: 'Sıkça Sorulan Sorular',
@@ -73,9 +73,9 @@ export default {
       here: 'burada',
       fullstop: '.',
       accordion1: {
-        title: 'Helix hangi özellikleri sunar?',
+        title: 'ZEC Perps hangi özellikleri sunar?',
         featureTitle:
-          'Helix, gelişmiş özellikler ve esneklikle sorunsuz ve güçlü bir ticaret deneyimi sunar:',
+          'ZEC Perps, gelişmiş özellikler ve esneklikle sorunsuz ve güçlü bir ticaret deneyimi sunar:',
         stocks: 'hisseler',
         lpRewards: 'LP ödülleri',
         commodities: 'emtialar',
@@ -100,9 +100,9 @@ export default {
           'Sık sık düzenlenen {tradingCompetitions}’a katılın ve özel ödüllerin kilidini açın.'
       },
       accordion2: {
-        title: 'Helix’e varlıkları nasıl getiririm?',
+        title: 'ZEC Perps’e varlıkları nasıl getiririm?',
         optionTitle:
-          "Helix'te işlem yapmaya başlamak için önce Injective ağı üzerinde USDT veya INJ gibi varlıklar edinmelisiniz:",
+          "ZEC Perps'te işlem yapmaya başlamak için önce Injective ağı üzerinde USDT veya INJ gibi varlıklar edinmelisiniz:",
         fiatOnRamps: 'fiat giriş yöntemleri',
         injectiveBridge: 'Injective Köprüsü',
         option1:
@@ -113,14 +113,14 @@ export default {
           'Alternatif olarak Binance, ByBit ve daha fazlası gibi merkezi borsalardan da yatırım yapabilirsiniz.'
       },
       accordion3: {
-        title: 'Helix’te kripto para nasıl alım satımı yapılır?',
+        title: 'ZEC Perps’te kripto para nasıl alım satımı yapılır?',
         stepTitle:
-          'Helix üzerinde işlem yapmak hızlı, izinsiz ve tamamen gazsızdır. İşte nasıl başlayacağınız:',
+          'ZEC Perps üzerinde işlem yapmak hızlı, izinsiz ve tamamen gazsızdır. İşte nasıl başlayacağınız:',
         inj: 'INJ',
         spot: 'Spot',
         usdt: 'USDT',
         limit: 'limit',
-        helix: 'helixapp.com',
+        helix: 'zecperps.app',
         perpetual: 'Perpetual',
         marketOrder: 'piyasa emri',
         videoTutorialHere: 'video eğitimi burada',
@@ -133,26 +133,26 @@ export default {
         cta: 'Tüm adımları görmek ister misiniz? Adım adım {tutorial} kılavuzumuza göz atın.'
       },
       accordion4: {
-        title: 'Helix Mobil uygulaması var mı ve nereden indirebilirim?',
+        title: 'ZEC Perps Mobil uygulaması var mı ve nereden indirebilirim?',
         appStore: 'iOS (App Store)',
         playStore: 'Android (Google Play)',
         description:
-          'Helix Mobile, {appStore} ve {playStore} üzerinden ücretsizdir. Uygulamayı kurun, cüzdanınızı bağlayın ve web sürümünde gördüğünüz piyasa ve bakiyeleri burada da görün.'
+          'ZEC Perps Mobile, {appStore} ve {playStore} üzerinden ücretsizdir. Uygulamayı kurun, cüzdanınızı bağlayın ve web sürümünde gördüğünüz piyasa ve bakiyeleri burada da görün.'
       },
       accordion5: {
-        title: 'Helix Mobil’de cüzdanımı nasıl bağlarım?',
+        title: 'ZEC Perps Mobil’de cüzdanımı nasıl bağlarım?',
         description: 'Üç seçeneğiniz var:',
         option1:
-          "QR kodunu tarayın - Helix Mobile'ı açın, “Helix web üzerinde QR kodu tara”ya dokunun ve kameranızı Helix web uygulamasındaki ayarlarda gösterilen QR koduna doğrultun. (ACM'deki AuthZ modülüne bağlantı)",
+          "QR kodunu tarayın - ZEC Perps Mobile'ı açın, “ZEC Perps web üzerinde QR kodu tara”ya dokunun ve kameranızı ZEC Perps web uygulamasındaki ayarlarda gösterilen QR koduna doğrultun. (ACM'deki AuthZ modülüne bağlantı)",
         option2:
           'Mevcut sosyal girişinizi kullanın - masaüstünde kullandığınız aynı Google veya Apple hesabıyla giriş yapın, cüzdanınız anında görünür.',
         option3:
           'Yeni bir cüzdan oluşturun - sıfırdan başlamak isterseniz e-posta adresinize bağlı yeni bir saklama dışı cüzdan oluşturun.'
       },
       accordion6: {
-        title: 'Helix Mobil varlıklarımı nasıl güvende tutuyor?',
+        title: 'ZEC Perps Mobil varlıklarımı nasıl güvende tutuyor?',
         description:
-          'Helix Mobil uygulaması tamamen gözetimsizdir. Özel anahtarlar cihazınızda kalır, işlemler yerel olarak imzalanır ve ayarlardan biyometrik iki faktörlü doğrulama ekleyebilirsiniz. Helix, fonlarınızı veya seed phrase’inizi asla tutmaz - güvenlik web sürümündekiyle birebir aynıdır. Sosyal girişler için anahtarlar, sektör standardı olan Turnkey tarafından güvenli bir şekilde saklanır.'
+          'ZEC Perps Mobil uygulaması tamamen gözetimsizdir. Özel anahtarlar cihazınızda kalır, işlemler yerel olarak imzalanır ve ayarlardan biyometrik iki faktörlü doğrulama ekleyebilirsiniz. ZEC Perps, fonlarınızı veya seed phrase’inizi asla tutmaz - güvenlik web sürümündekiyle birebir aynıdır. Sosyal girişler için anahtarlar, sektör standardı olan Turnkey tarafından güvenli bir şekilde saklanır.'
       }
     }
   },
@@ -190,7 +190,7 @@ export default {
   guild: {
     title: 'Guildler',
     description:
-      'Helix Guildler, takım bazlı bir işlem yarışmasıdır. Kazanan guildin parçası olun ve birlikte kazanın!',
+      'ZEC Perps Guildler, takım bazlı bir işlem yarışmasıdır. Kazanan guildin parçası olun ve birlikte kazanın!',
     rewardDescription1:
       'Her guild için iki sıralama vardır. Birisi TIA/USDT piyasasında tüm guild üyelerinin oluşturduğu toplam işlem hacmine, diğeri ise tüm üyelerin ağırlıklı ortalama TIA bakiyesine göre yapılır. Her kategoride en yüksek sıralamaya sahip guild 500 INJ ve 5,000 TIA almaya hak kazanır.',
     rewardDescription2:
@@ -279,7 +279,7 @@ export default {
     joinGuild: {
       cta: 'Guild’e Katıl',
       maxCap: 'Maksimum Kapasite',
-      title: 'Helix’te bir guild’e katıl',
+      title: 'ZEC Perps’te bir guild’e katıl',
       invitationCode: 'Discord’dan davet kodu al',
       description: '"{name}" adlı guild’e katılarak ödüllerden pay kazan!'
     },
@@ -340,7 +340,7 @@ export default {
         enable: {
           title: 'Otomatik İmzalama',
           description:
-            'Etkinleştirildiğinde, Helix’te her işlem için onay vermeden daha akıcı işlem yapabilirsin.'
+            'Etkinleştirildiğinde, ZEC Perps’te her işlem için onay vermeden daha akıcı işlem yapabilirsin.'
         }
       }
     },
@@ -400,7 +400,7 @@ export default {
     },
     stockTwits: {
       startHere: 'Buradan başla',
-      title: '👋 Helix’e yeni misin?',
+      title: '👋 ZEC Perps’e yeni misin?',
       description: 'Kripto ve tokenize hisselerde kolayca işlem yapmaya başla.'
     }
   },
@@ -585,9 +585,9 @@ export default {
       tradesCanBePlace:
         'Bu saatlerin dışında da işlem yapılabilir, ancak fiyatlar piyasa tekrar açılana kadar güncellenmez.',
       nyseMarketClosedTrade:
-        'Helix’te tüm piyasalar 7/24 işlem görür. Ancak bu piyasa {nyseClosedTimes}, yani UTC 14:30 - 21:00 arası NYSE işlem saatlerini takip eder; geceleri, hafta sonları ve NYSE tatillerinde kapalıdır.',
+        'ZEC Perps’te tüm piyasalar 7/24 işlem görür. Ancak bu piyasa {nyseClosedTimes}, yani UTC 14:30 - 21:00 arası NYSE işlem saatlerini takip eder; geceleri, hafta sonları ve NYSE tatillerinde kapalıdır.',
       marketClosedTrade:
-        'Helix’te tüm piyasalar 7/24 işlem görür. Ancak bu piyasa {marketClosedTimes} saatlerine uyar. Piyasalar Cuma 17:00 (ET) ile Pazar 17:00 (ET) arasında, CME tatillerinde ve Pazartesi-Perşembe 17:00 (ET) - 18:00 (ET) arası kapalıdır.'
+        'ZEC Perps’te tüm piyasalar 7/24 işlem görür. Ancak bu piyasa {marketClosedTimes} saatlerine uyar. Piyasalar Cuma 17:00 (ET) ile Pazar 17:00 (ET) arasında, CME tatillerinde ve Pazartesi-Perşembe 17:00 (ET) - 18:00 (ET) arası kapalıdır.'
     },
     stats: {
       low: '24s En Düşük',
@@ -627,17 +627,17 @@ export default {
       availableUSDT: 'Kullanılabilir USDT',
       depositToNeptune: "Neptune'a Yatır",
       percentageInReserve: '(%15 rezervde)',
-      automatedYields: 'Helix Otomatik Getiriler',
+      automatedYields: 'ZEC Perps Otomatik Getiriler',
       withdrawFromNeptune: "Neptune'dan Çek",
       availableUsdt: '≈{peggyUsdt} USDT + {neptuneUsdt} Neptune USDT',
       apyTooltip:
         'Bu, Neptune’un USDT mevduatlarına sunduğu güncel APY’dir. Zamanla değişecektir.',
       banner:
-        'Helix, uygulamadan ayrılmadan stablecoinlerinizde getiri elde etmenizi kolaylaştırmak için Neptune ile ortaklık kurdu. Başlamak için {here} tıklayın!',
+        'ZEC Perps, uygulamadan ayrılmadan stablecoinlerinizde getiri elde etmenizi kolaylaştırmak için Neptune ile ortaklık kurdu. Başlamak için {here} tıklayın!',
       description:
         'Stablecoinlerinizi {link} üzerindeki USDT kredi havuzuna yatırarak otomatik getiri elde edin. İşlem yapmak istediğinizde, fonlar otomatik olarak kredi havuzundan çekilir, ekstra adım gerekmez.',
       warningText:
-        'İlerlemeniz durumunda, Injective tarafından kontrol edilmeyen veya ilişkili olmayan bir uygulamaya fon yatırmış olacaksınız. Bu uygulamayı kullanmanız tamamen sizin sorumluluğunuzdadır; oluşabilecek kayıplardan Injective sorumlu tutulamaz. Detaylar için Helix {terms} sayfasını inceleyin.'
+        'İlerlemeniz durumunda, Injective tarafından kontrol edilmeyen veya ilişkili olmayan bir uygulamaya fon yatırmış olacaksınız. Bu uygulamayı kullanmanız tamamen sizin sorumluluğunuzdadır; oluşabilecek kayıplardan Injective sorumlu tutulamaz. Detaylar için ZEC Perps {terms} sayfasını inceleyin.'
     },
     iAssetModal: {
       cta: 'İşlem Yapmaya Başla',
@@ -664,9 +664,9 @@ export default {
       title: 'Deneysel piyasa',
       termsAndCondition: 'Şartlar ve Koşullar',
       description:
-        "Injective üzerinde mevcut ancak Helix'te listelenmeyen bir piyasaya erişiyorsunuz. Lütfen işlem yapmak istediğiniz Piyasa ID'sinin doğru olduğundan emin olun.",
+        "Injective üzerinde mevcut ancak ZEC Perps'te listelenmeyen bir piyasaya erişiyorsunuz. Lütfen işlem yapmak istediğiniz Piyasa ID'sinin doğru olduğundan emin olun.",
       description2:
-        "Devam ederek Helix'i kullanmanız durumunda Helix {0}’i okuduğunuzu, kabul ettiğinizi ve bağlı olduğunuzu onaylamış olursunuz."
+        "Devam ederek ZEC Perps'i kullanmanız durumunda ZEC Perps {0}’i okuduğunuzu, kabul ettiğinizi ve bağlı olduğunuzu onaylamış olursunuz."
     },
     sharePnlModal: {
       markPrice: 'Gösterge fiyat',
@@ -709,7 +709,7 @@ export default {
     modal: {
       continueToMito: 'Mito’ya Devam Et',
       redirect:
-        'Vault’lara girerseniz, Helix’ten Mito’ya yönlendirileceksiniz ve burada getiri kazanabilirsiniz.'
+        'Vault’lara girerseniz, ZEC Perps’ten Mito’ya yönlendirileceksiniz ve burada getiri kazanabilirsiniz.'
     }
   },
   markets: {
@@ -790,7 +790,7 @@ export default {
       description:
         'Cüzdan sağlayıcımızı yükseltiyoruz ve mevcut olan sizin için kullanımdan kaldırılıyor. Cüzdanınızı taşımak için aşağıdakileri yapmanızı şiddetle tavsiye ederiz',
       migrateDescription:
-        'Oturum açma yöntemimizi daha hızlı, basit ve güvenli hale getirdik. Helix’i kullanmaya devam etmek için lütfen güncellenmiş cüzdanınızı bağlayarak varlıklarınızı taşıyın. Sadece bir an sürer ve fonlarınız her zaman güvendedir.'
+        'Oturum açma yöntemimizi daha hızlı, basit ve güvenli hale getirdik. ZEC Perps’i kullanmaya devam etmek için lütfen güncellenmiş cüzdanınızı bağlayarak varlıklarınızı taşıyın. Sadece bir an sürer ve fonlarınız her zaman güvendedir.'
     },
     option: {
       leap: 'Leap',
@@ -820,7 +820,7 @@ export default {
     volume: 'Hacim',
     totalPoints: 'Toplam Puan',
     lastUpdatedAt: 'Son güncelleme: ',
-    myTotalPoints: 'Helix üzerindeki toplam puanım',
+    myTotalPoints: 'ZEC Perps üzerindeki toplam puanım',
     paginationDetails: '{from}-{to} / {total}',
     description:
       '1. Sezon sona erdi. Puanlar hakkında daha fazla bilgi için bakınız',
@@ -847,14 +847,14 @@ export default {
     settlePerpMarketBannerNewLaunch:
       'There is currently a live governance proposal to force settle the WTI PERP market. You are encouraged to close open positions, or your position will be force settled at the mark price at the time of settlement. After this market is settled, a new expiry futures market will be launched.',
     pointsS1Ended:
-      'Helix Puanları 1. Sezon sona erdi. Katılımınız için teşekkürler, daha fazla güncelleme için bizi takipte kalın!',
+      'ZEC Perps Puanları 1. Sezon sona erdi. Katılımınız için teşekkürler, daha fazla güncelleme için bizi takipte kalın!',
 
     kado: {
       getStarted: 'Başlayın',
-      title: 'Helix 2.0 ile tanışın! Yepyeni bir ticaret deneyimi keşfedin.'
+      title: 'ZEC Perps 2.0 ile tanışın! Yepyeni bir ticaret deneyimi keşfedin.'
     },
     iAssets: {
-      title: "Helix'te iAssets ile işlem yapın",
+      title: "ZEC Perps'te iAssets ile işlem yapın",
       description:
         'Hızlı, ucuz ve daha şeffaf işlemler için kripto ile hisse senetleri alım satımı yapın - geleneksel piyasalar ile merkeziyetsiz finansın gücünü birleştiriyor.'
     },
@@ -864,20 +864,20 @@ export default {
       takeSurvey: 'Ankete katıl',
       loveFeedback: 'Geri bildiriminizi duymak isteriz!',
       thankYouEnd:
-        ' tamamlamak için ve bu bilgiler Helix üzerindeki gelecekteki deneyiminizi geliştirmemize yardımcı olacak.',
+        ' tamamlamak için ve bu bilgiler ZEC Perps üzerindeki gelecekteki deneyiminizi geliştirmemize yardımcı olacak.',
       thankYouBeginning:
-        "Helix'i kullandığınız için teşekkürler. Kullanıcılarımıza daha iyi ürünler sunmak için sürekli çalışıyoruz ve sizden geri bildirim almak isteriz! Anketin tamamlanması 3 dakikadan az sürecektir."
+        "ZEC Perps'i kullandığınız için teşekkürler. Kullanıcılarımıza daha iyi ürünler sunmak için sürekli çalışıyoruz ve sizden geri bildirim almak isteriz! Anketin tamamlanması 3 dakikadan az sürecektir."
     },
     newFeature: {
       cta: 'TradFi ile işlem yap',
       title: 'TradFi Hisse Senetleri Endeksi ile tanışın!',
       description:
-        'Büyük halka açık hisse senetlerini ilk kez tek entegre bir endeks üzerinden zincir üzerinde işlem yapın. En düşük ücretler ve 25X’e kadar kaldıraç ile TradFi’ya 7/24 erişim sadece Helix’te.'
+        'Büyük halka açık hisse senetlerini ilk kez tek entegre bir endeks üzerinden zincir üzerinde işlem yapın. En düşük ücretler ve 25X’e kadar kaldıraç ile TradFi’ya 7/24 erişim sadece ZEC Perps’te.'
     },
     leaderboard: {
-      currentCompetitionLink: 'Helix’te 50.000$ ödül havuzu!',
+      currentCompetitionLink: 'ZEC Perps’te 50.000$ ödül havuzu!',
       currentCompetitionTitle:
-        'Helix’te işlem yapın ve {linkDescription} ödül havuzundan payınızı kazanın',
+        'ZEC Perps’te işlem yapın ve {linkDescription} ödül havuzundan payınızı kazanın',
       gwagon: {
         blog: 'blog',
         ended: 'Sona Erdi',
@@ -897,7 +897,7 @@ export default {
         ended: 'Sona Erdi',
         title: 'Varlıklarınızı Sahiplenin, Geleceğinizi Kontrol Edin.',
         description:
-          'Helix’te 50.000$ ödül havuzundan payınızı almak için yarışın. 21 Şubat 2025 18:00 UTC’den 3 Mart 2025 18:00 UTC’ye kadar, 50.000$ ödül havuzundan 1.000$ kazanma şansı için işlem yapabilirsiniz. Her 1.000$ işlem hacmi bir giriş hakkı sağlar. Daha fazla detay için {blog}’a bakın.'
+          'ZEC Perps’te 50.000$ ödül havuzundan payınızı almak için yarışın. 21 Şubat 2025 18:00 UTC’den 3 Mart 2025 18:00 UTC’ye kadar, 50.000$ ödül havuzundan 1.000$ kazanma şansı için işlem yapabilirsiniz. Her 1.000$ işlem hacmi bir giriş hakkı sağlar. Daha fazla detay için {blog}’a bakın.'
       }
     }
   },
@@ -910,7 +910,7 @@ export default {
     referAndEarn: 'Davet Et ve Kazan',
     confirmReferral: 'Davet Onayla',
     referralDetails: 'Davet Detayları',
-    scanToJoin: "Helix'e katılmak için tara veya",
+    scanToJoin: "ZEC Perps'e katılmak için tara veya",
     yourReferralLink: 'Davet Linkiniz',
     checkAvailability: 'Uygunluğu Kontrol Et',
     affiliatedAddress: 'Bağlı Adres',
@@ -953,7 +953,7 @@ export default {
       step2Title: 'Arkadaşlarını Davet Et, %40 Kazan',
       step1Title: 'Davet Linkini Paylaş',
       step2Description: 'İstediğin kadar arkadaşını ekle.',
-      description1: "Ağınızı Helix'te işlem yapmaya davet edin",
+      description1: "Ağınızı ZEC Perps'te işlem yapmaya davet edin",
       step1Description: 'Benzersiz linkinizi oluşturabilirsiniz.',
       description2: " ve komisyon olarak ücretlerinin %40'ını kazanın.",
       step3Description: 'Ödüllerinizi kripto cüzdanınızda anında alın.'
@@ -961,9 +961,9 @@ export default {
     shareModal: {
       title: 'Arkadaşlarını Davet Et!',
       customizeYourText: 'Metnini Özelleştir',
-      description: "QR kodunu tara ve Helix'e katıl!",
+      description: "QR kodunu tara ve ZEC Perps'e katıl!",
       defaultText:
-        "Ödüllerini takip et ve istediğin zaman çek. Ağını Helix'te işlem yapmaya davet et ve ücretlerinin %40'ını komisyon olarak kazan."
+        "Ödüllerini takip et ve istediğin zaman çek. Ağını ZEC Perps'te işlem yapmaya davet et ve ücretlerinin %40'ını komisyon olarak kazan."
     }
   },
   lpRewards: {
@@ -994,7 +994,7 @@ export default {
     totalRewardsAllTime: 'Toplam Ödüller (Tüm Zamanlar)',
     totalRewardsThisRound: 'Bu Turdaki Toplam Ödüller',
     totalRewardsOfRound: '{round}. Turdaki Toplam Ödüller',
-    helixLpRewardsRound: 'Helix LP Ödülleri {round}. Tur',
+    helixLpRewardsRound: 'ZEC Perps LP Ödülleri {round}. Tur',
     description: 'Farklı spot piyasalarda işlem yaparak ödül kazanın',
     rewardsPending:
       'LP Ödülleri Beklemede: Bu çift için ödüller şu anda işleniyor. Fonlama turun bitiminden sonra bir haftaya kadar sürebilir.',
@@ -1056,7 +1056,7 @@ export default {
       pnl: {
         title: 'İşlem PnL',
         tooltip:
-          'Portföy sayfasındaki kar ve zarar hesaplamaları, 29 Mayıs 2024 tarihinden itibaren Helix’te açılıp kapanan pozisyonlardan yaklaşık gerçekleşen kar ve zararı yansıtır. Bu hesaplama yalnızca bilgilendirme amaçlıdır ve vergi bildirim yükümlülükleri için kullanılmamalıdır.'
+          'Portföy sayfasındaki kar ve zarar hesaplamaları, 29 Mayıs 2024 tarihinden itibaren ZEC Perps’te açılıp kapanan pozisyonlardan yaklaşık gerçekleşen kar ve zararı yansıtır. Bu hesaplama yalnızca bilgilendirme amaçlıdır ve vergi bildirim yükümlülükleri için kullanılmamalıdır.'
       }
     },
     balances: {
@@ -1165,7 +1165,7 @@ export default {
       durationDescription: 'Otomatik imza 3 gün boyunca aktiftir.',
       pageTitle: 'Otomatik İmza: İşlemleri Otomatik Onayla',
       content1: {
-        description1: "Etkinleştirildiğinde, Helix'i kullanırken",
+        description1: "Etkinleştirildiğinde, ZEC Perps'i kullanırken",
         description2: 'her işlemi 3 gün boyunca imzalamanıza gerek kalmaz.'
       },
       content2: {
@@ -1355,7 +1355,7 @@ export default {
     blog: 'Blog',
     v2: ' Versiyon 2.0',
     support: 'Destek',
-    docs: 'Helix Belgeleri',
+    docs: 'ZEC Perps Belgeleri',
     explorer: 'Gezgin',
     resources: 'Kaynaklar',
     community: 'Topluluk',
@@ -1366,7 +1366,7 @@ export default {
     apiDocumentation: 'API Dokümantasyonu',
     termsAndConditions: 'Şartlar & Koşullar',
     helixProvides:
-      'Not: Helix, Injective DAO tarafından onaylanan birçok piyasada yapıcı iadeleri sağlamaktadır.'
+      'Not: ZEC Perps, Injective DAO tarafından onaylanan birçok piyasada yapıcı iadeleri sağlamaktadır.'
   },
   tradingBots: {
     all: 'Tümü',
@@ -1463,9 +1463,9 @@ export default {
     disclaimer:
       'Risk Uyarısını okudum ve anladım, parametre seçimi ve yatırım kararının her durumda yalnızca müşteri tarafından verileceğini kabul ediyorum.',
     description:
-      "Helix'te otomatik ticaret için komut merkeziniz. Aktif botlarınızı izleyin, LP ödüllerinizi takip edin ve topluluk tarafından başarılı bulunan stratejileri keşfedin.",
+      "ZEC Perps'te otomatik ticaret için komut merkeziniz. Aktif botlarınızı izleyin, LP ödüllerinizi takip edin ve topluluk tarafından başarılı bulunan stratejileri keşfedin.",
     topPerformersDescription:
-      "Gerçek zamanlı başarıdan öğrenin. Hangi stratejiler ve parametrelerin Helix'te şu anda en iyi sonuçları verdiğini görün. Bu verileri yaklaşımınızı geliştirmek veya kanıtlanmış performansa dayalı yeni bir bot başlatmak için kullanın.",
+      "Gerçek zamanlı başarıdan öğrenin. Hangi stratejiler ve parametrelerin ZEC Perps'te şu anda en iyi sonuçları verdiğini görün. Bu verileri yaklaşımınızı geliştirmek veya kanıtlanmış performansa dayalı yeni bir bot başlatmak için kullanın.",
     botType: {
       spotGrid: 'Spot Grid',
       futuresGrid: 'Vadeli Grid',
@@ -1556,14 +1556,14 @@ export default {
     myStats: 'İstatistiklerim',
     title: 'Liderlik Tablosu',
     viewMore: 'Daha Fazla Gör',
-    helix: 'helixapp.com',
+    helix: 'zecperps.app',
     timestamp: 'Zaman Damgası',
     startTrading: 'Ticarete Başla',
     privacyPolicy: 'Gizlilik Politikası',
     rulesTermsAndConditions: 'Kurallar, Şartlar ve Koşullar',
     refresh: 'Liderlik tablosu her saat başında yenilenir',
     description:
-      "Helix, en iyi Trader’ları zincir üstü ticaret PnL'lerine göre sıralar",
+      "ZEC Perps, en iyi Trader’ları zincir üstü ticaret PnL'lerine göre sıralar",
     tradeAndWin:
       'Henüz liderlik tablosunda değil misin? Kazanan işlemler yaparak yerini al!',
     blocked:
@@ -1652,7 +1652,7 @@ export default {
     subscribeDescription: 'Notifi ile gerçek zamanlı bildirimler alın',
     governanceDescription: 'En son zincir güncellemesini kontrol edin',
     footer:
-      "Helix'i daha iyi yapmak için çalışıyoruz. Sabır gösterdiğiniz için teşekkür ederiz, yakında geri döneceğiz!",
+      "ZEC Perps'i daha iyi yapmak için çalışıyoruz. Sabır gösterdiğiniz için teşekkür ederiz, yakında geri döneceğiz!",
     description:
       'Birkaç güncelleme yapıyoruz. Bu süre zarfında bazı özellikler bir süre kullanılamayacak.'
   },
@@ -1705,7 +1705,7 @@ export default {
     stakeTotalToReceiveFullAmount:
       'Tam miktarı almak için toplam {total} INJ stake edin',
     sunset:
-      'Trade & Earn programına katıldığınız için teşekkürler! Helix kullanıcılarını ödüllendirecek yeni programlar için takipte kalın.',
+      'Trade & Earn programına katıldığınız için teşekkürler! ZEC Perps kullanıcılarını ödüllendirecek yeni programlar için takipte kalın.',
     pendingMaxCampaignRewardsTooltip:
       "Önceki epoch'ta dağıtılan toplam INJ miktarı. Ödül dağıtımı vesting dönemi sonunda gerçekleşir.",
     myRewardPointsTooltip:
@@ -1722,14 +1722,14 @@ export default {
     trustedByTheBest: 'En iyiler tarafından tercih ediliyor',
     heroTitle: 'Gerçekten Zincir Üzerinde Kurumsal Finans',
     allRightsReserved: 'Injective Labs. Tüm Hakları Saklıdır.',
-    modalDescription: 'Helix Kurumsal ekibiyle doğrudan bağlantı kurun.',
+    modalDescription: 'ZEC Perps Kurumsal ekibiyle doğrudan bağlantı kurun.',
     whyFinancialInstitutionsChooseHelix:
-      "Finansal kurumların Helix'i tercih etme sebepleri",
+      "Finansal kurumların ZEC Perps'i tercih etme sebepleri",
     heroSubtitle:
       'Sınırsız kripto varlıklar, perpetual sözleşmeler ve yapılandırılmış ürünlerle tek tam merkeziyetsiz ağda işlem yapın.',
     permisionedMarketsTitle: 'İzinli Piyasalar',
     permisionedMarketsBody:
-      'Helix, kurumsal seviyede izinli piyasalara eşsiz bir geçit sunar, profesyonelce incelenmiş karşı taraflarla sorunsuz etkileşim sağlar.',
+      'ZEC Perps, kurumsal seviyede izinli piyasalara eşsiz bir geçit sunar, profesyonelce incelenmiş karşı taraflarla sorunsuz etkileşim sağlar.',
     multiAssetSupportTitle: 'Çoklu Varlık Desteği',
     multiAssetSupportBody:
       'Birden fazla blok zinciri ağı üzerinde zincir üzerinde varlıklar, türevler ve yapılandırılmış ürünlere erişim sağlayın.',
@@ -1747,7 +1747,7 @@ export default {
       'Varlıklarınızın kontrolünüzden hiç çıkmamasını sağlayan en sıkı güvenlik önlemleriyle teminatlı, emanetsiz bir platform kullanın.',
     superiorInfrastructureTitle: 'Üstün Altyapı',
     superiorInfrastructureBody:
-      'En sofistike finans kurumları ve traderların ihtiyaçlarına uygun Helix’in özel altyapısından faydalanın.',
+      'En sofistike finans kurumları ve traderların ihtiyaçlarına uygun ZEC Perps’in özel altyapısından faydalanın.',
     form: {
       email: 'E-posta',
       company: 'Şirket',
@@ -1821,17 +1821,17 @@ export default {
         termsAndCondition: 'Şartlar ve Koşullar',
         title: 'Ayrıca, aşağıdaki hususları beyan, garanti ve kabul edersiniz:',
         acknowledge_1:
-          "ABD (perpetual sözleşme ticareti açısından), İngiltere (yatırım profesyoneli değilseniz) veya Helix Şartlar ve Koşullarında tanımlanan Kısıtlı Bölge'de ikamet eden, bulunan, kayıtlı acentesi olan kişi veya şirket değilsiniz.",
+          "ABD (perpetual sözleşme ticareti açısından), İngiltere (yatırım profesyoneli değilseniz) veya ZEC Perps Şartlar ve Koşullarında tanımlanan Kısıtlı Bölge'de ikamet eden, bulunan, kayıtlı acentesi olan kişi veya şirket değilsiniz.",
         acknowledge_2:
-          "Şu anda veya gelecekte ABD (perpetual sözleşme ticareti açısından), İngiltere (yatırım profesyoneli değilseniz) veya Kısıtlı Bölge'de bulunurken bu siteye veya helixapp.com’a erişmeyeceksiniz veya kullanmayacaksınız.",
+          "Şu anda veya gelecekte ABD (perpetual sözleşme ticareti açısından), İngiltere (yatırım profesyoneli değilseniz) veya Kısıtlı Bölge'de bulunurken bu siteye veya zecperps.app’a erişmeyeceksiniz veya kullanmayacaksınız.",
         acknowledge_3:
           'Kısıtlı Bölge’de fiziksel konumunuzu gizlemek için sanal özel ağ veya başka araçlar kullanmıyorsunuz ve kullanmayacaksınız.',
         acknowledge_4:
-          'İkamet ettiğiniz ve bulunduğunuz yargı alanının yasaları kapsamında bu siteye erişme ve helixapp.com üzerinde işlem yapma hakkınız yasal olarak vardır.',
+          'İkamet ettiğiniz ve bulunduğunuz yargı alanının yasaları kapsamında bu siteye erişme ve zecperps.app üzerinde işlem yapma hakkınız yasal olarak vardır.',
         acknowledge_5:
           'Kaldıraç kullanmanın, perpetual sözleşmelere girmemenin ve dijital varlıklarda işlem yapmanın risklerini anlıyorsunuz.',
         disclaimerNote:
-          'Cüzdan bağlayarak, Helix {0} ve Injective Labs {1}’i okuduğunuzu, kabul ettiğinizi ve bağlı olduğunuzu onaylarsınız.'
+          'Cüzdan bağlayarak, ZEC Perps {0} ve Injective Labs {1}’i okuduğunuzu, kabul ettiğinizi ve bağlı olduğunuzu onaylarsınız.'
       },
       postOnlyMode: {
         title: 'Sadece Emir Modu!',
@@ -1840,9 +1840,9 @@ export default {
       },
       geoRestricted: {
         cta: 'Anladım',
-        title: 'Helix bölgenizde kullanılamıyor.',
+        title: 'ZEC Perps bölgenizde kullanılamıyor.',
         description:
-          "Düzenleyici gereksinimler nedeniyle Helix'i bölgenizde sunamıyoruz. Ekibimiz hizmet alanımızı genişletmek ve yerel yasalara tam uyumu sağlamak için aktif olarak çalışıyor. İlginiz için teşekkür eder, büyüyen küresel topluluğumuza yakında katılmanızı umut ederiz. Açık pozisyonlarınız varsa portföy sayfasından kapatabilirsiniz."
+          "Düzenleyici gereksinimler nedeniyle ZEC Perps'i bölgenizde sunamıyoruz. Ekibimiz hizmet alanımızı genişletmek ve yerel yasalara tam uyumu sağlamak için aktif olarak çalışıyor. İlginiz için teşekkür eder, büyüyen küresel topluluğumuza yakında katılmanızı umut ederiz. Açık pozisyonlarınız varsa portföy sayfasından kapatabilirsiniz."
       },
       devMode: {
         connect: 'Bağlan',

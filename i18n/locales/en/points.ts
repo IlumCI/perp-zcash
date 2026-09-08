@@ -11,7 +11,7 @@ export default {
     volume: 'Volume',
     totalPoints: 'Total Points',
     lastUpdatedAt: 'Last updated at ',
-    myTotalPoints: 'My total points on Helix',
+    myTotalPoints: 'My total points on ZEC Perps',
     paginationDetails: '{from}-{to} of {total}',
     description:
       'Season 1 is officially closed. But don’t worry if you missed out! Stay tuned for upcoming opportunities.',

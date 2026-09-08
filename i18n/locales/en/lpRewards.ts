@@ -29,7 +29,7 @@ export default {
     totalRewardsAllTime: 'Total Rewards (All Time)',
     totalRewardsThisRound: 'Total Rewards This Round',
     totalRewardsOfRound: 'Total Rewards of Round {round}',
-    helixLpRewardsRound: 'Helix LP Rewards Round {round}',
+    helixLpRewardsRound: 'ZEC Perps LP Rewards Round {round}',
     description: 'Earn rewards by trading different spot markets',
     rewardsPending:
       'LP Rewards Pending: Rewards for this pair are currently being processed. Funding may take up to a week after the round ends.',

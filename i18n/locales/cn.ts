@@ -3,35 +3,35 @@ export default {
     openFinance: '重新构想',
     description: '具有机构级流动性，安全、快速、无 Gas 的链上交易',
     gasFees: 'Gas 费用',
-    whyHelix: '为何选择 Helix?',
+    whyHelix: '为何选择 ZEC Perps?',
     reimagined: '开放式金融',
     latestNews: '最新消息',
     totalVolume: '总交易量',
     totalMarkets: '总市场数量',
     startTrading: '开始交易',
-    helixDocs: 'Helix 文档',
+    helixDocs: 'ZEC Perps 文档',
     somethingIsBrewing: '好消息酝酿中',
     builtForTheCommunity: '专为社区打造',
     builtForTheCommunityDescription: '没有投资者，没有风险资本，没有废话。',
-    downloadHelixMobile: '在 iOS 或 Android 下载 Helix 行动应用',
+    downloadHelixMobile: '在 iOS 或 Android 下载 ZEC Perps 行动应用',
     overview: {
-      title: '为何选择 Helix?',
+      title: '为何选择 ZEC Perps?',
       lpRewardsTitle: 'LP 奖励',
       tradingBotsTitle: '交易机器人',
       gasFreeTitle: '无 Gas 交易',
       tradeStocksTitle: '交易股票和现实世界资产',
       lpRewardsDescription: '提供流动性并获得报酬。',
       description: '作为顶级交易所打造，但完全去中心化。',
-      gasFreeDescription: '永远无需担心 Helix 的 Gas 费用。始终无 Gas。',
+      gasFreeDescription: '永远无需担心 ZEC Perps 的 Gas 费用。始终无 Gas。',
       tradingBotsDescription: '只需单击即可部署先进的智能链上交易策略。',
       tradeStocksDescription:
         '使用加密货币交易股票和现实世界资产 (RWA)，实现更快、更便宜、更透明的交易。'
     },
     gettingStarted: {
-      title: '快速入门 Helix',
+      title: '快速入门 ZEC Perps',
       injectiveBridge: 'Injective 跨链桥',
       description: '将加密资产存入 Injective ',
-      description2: '通过 {bridgeLink} 将 USDT 和其他资产跨链到 Helix。',
+      description2: '通过 {bridgeLink} 将 USDT 和其他资产跨链到 ZEC Perps。',
       gasRequirement: '确保您拥有至少 0.1 INJ 来支付跨链费用。',
       step1: {
         title: '步骤一',
@@ -48,14 +48,14 @@ export default {
       step4: {
         title: '步骤四',
         description:
-          '跨链完成后，返回 Helix 并在投资组合页面查看您的余额。您已准备好进行交易！'
+          '跨链完成后，返回 ZEC Perps 并在投资组合页面查看您的余额。您已准备好进行交易！'
       }
     },
     mobile: {
       usp1: '新手友善',
       title: '随时随地皆可交易',
       usp2: '加密资产、股票、大宗商品和外汇',
-      downloadHelixMobile: '下载 Helix 行动应用'
+      downloadHelixMobile: '下载 ZEC Perps 行动应用'
     },
     faq: {
       title: '常见问题',
@@ -65,9 +65,9 @@ export default {
       here: '此',
       fullstop: '。',
       accordion1: {
-        title: 'Helix 提供了哪些服务？',
+        title: 'ZEC Perps 提供了哪些服务？',
         featureTitle:
-          'Helix 提供无缝且强大的交易体验，具有先进的功能和灵活性：',
+          'ZEC Perps 提供无缝且强大的交易体验，具有先进的功能和灵活性：',
         stocks: '股票',
         lpRewards: 'LP 奖励',
         commodities: '大宗商品',
@@ -89,9 +89,9 @@ export default {
         feature6: '参加频繁的 {tradingCompetitions} 并解锁独家奖励。'
       },
       accordion2: {
-        title: '如何将资产存入 Helix？',
+        title: '如何将资产存入 ZEC Perps？',
         optionTitle:
-          '要开始在 Helix 上交易，您首先需要在 Injective 上获取 USDT 或 INJ 等资产：',
+          '要开始在 ZEC Perps 上交易，您首先需要在 Injective 上获取 USDT 或 INJ 等资产：',
         fiatOnRamps: '法币入口',
         injectiveBridge: 'Injective 跨链桥',
         option1:
@@ -101,14 +101,14 @@ export default {
           '或者，您也可以从不同的中心化交易所（如 Binance、ByBit 等）进行存款。'
       },
       accordion3: {
-        title: '如何在 Helix 上交易加密资产？',
+        title: '如何在 ZEC Perps 上交易加密资产？',
         stepTitle:
-          '在 Helix 上交易快速、无需许可，而且完全免 Gas 费用。以下是开始操作方法：',
+          '在 ZEC Perps 上交易快速、无需许可，而且完全免 Gas 费用。以下是开始操作方法：',
         inj: 'INJ',
         spot: '现货',
         usdt: 'USDT',
         limit: '限制',
-        helix: 'helixapp.com',
+        helix: 'zecperps.app',
         perpetual: '永续',
         marketOrder: '市价单',
         videoTutorialHere: '此处观看视频教程',
@@ -119,26 +119,26 @@ export default {
         cta: '想要完整的教程吗？查看我们的分步 {tutorial}。'
       },
       accordion4: {
-        title: '是否有 Helix Mobile App？我在哪里可以获取它？',
+        title: '是否有 ZEC Perps Mobile App？我在哪里可以获取它？',
         appStore: 'iOS（应用商店）',
         playStore: 'Android（Google Play）',
         description:
-          'Helix Mobile 在 {appStore} 和 {playStore} 上免费。安装应用并连接您的钱包，您就能看到与网页版相同的市场和余额。'
+          'ZEC Perps Mobile 在 {appStore} 和 {playStore} 上免费。安装应用并连接您的钱包，您就能看到与网页版相同的市场和余额。'
       },
       accordion5: {
-        title: '我该如何在 Helix Mobile 上连接钱包？',
+        title: '我该如何在 ZEC Perps Mobile 上连接钱包？',
         description: '您有三个选择：',
         option1:
-          '扫描二维码 - 打开 Helix Mobile，点击“扫描 Helix 网页上的二维码”，然后将相机对准设置中 Helix 网页应用上显示的二维码。（链接到 ACM 中的 AuthZ 模块）',
+          '扫描二维码 - 打开 ZEC Perps Mobile，点击“扫描 ZEC Perps 网页上的二维码”，然后将相机对准设置中 ZEC Perps 网页应用上显示的二维码。（链接到 ACM 中的 AuthZ 模块）',
         option2:
           '使用您现有的社交应用登录 - 使用您在桌面上使用的相同 Google 或 Apple 帐户登录，您的钱包会立即出现。',
         option3:
           '创建一个全新的钱包 - 如果您想从头开始，请生成一个与您的电子邮件绑定的全新非托管钱包。'
       },
       accordion6: {
-        title: ' Helix Mobile 如何保证我的资产安全？',
+        title: ' ZEC Perps Mobile 如何保证我的资产安全？',
         description:
-          'Helix Mobile 应用完全非托管。私钥保留在您的设备上，交易在本地签名，您可以在设置中添加生物识别双因素验证。Helix 绝不会扣留您的资金或助记词——其安全性与网页端完全相同。对于社交登录，密钥由业界标准的密钥管理工具 Turnkey 安全存储。'
+          'ZEC Perps Mobile 应用完全非托管。私钥保留在您的设备上，交易在本地签名，您可以在设置中添加生物识别双因素验证。ZEC Perps 绝不会扣留您的资金或助记词——其安全性与网页端完全相同。对于社交登录，密钥由业界标准的密钥管理工具 Turnkey 安全存储。'
       }
     }
   },
@@ -175,7 +175,7 @@ export default {
   guild: {
     title: '公会',
     description:
-      'Helix 公会是一项基于团队的交易竞赛。加入强者战队，一起赢取荣耀与奖励！',
+      'ZEC Perps 公会是一项基于团队的交易竞赛。加入强者战队，一起赢取荣耀与奖励！',
     rewardDescription1:
       '每个公会将根据 TIA/USDT 市场的总交易量与成员的加权平均 TIA 持仓进行排名，两个榜单的第一名将分别获得 500 INJ 与 5,000 TIA 奖励。',
     rewardDescription2:
@@ -262,9 +262,9 @@ export default {
     joinGuild: {
       cta: '加入公会',
       maxCap: '人数上限',
-      title: '在 Helix 上加入公会',
+      title: '在 ZEC Perps 上加入公会',
       invitationCode: '在 Discord 获得邀请码d',
-      description: '加入 Helix 上的 "{name}" 公会，赢取专属奖励份额！'
+      description: '加入 ZEC Perps 上的 "{name}" 公会，赢取专属奖励份额！'
     },
     verifyJoinGuild: {
       cta: '加入',
@@ -322,7 +322,7 @@ export default {
         enable: {
           title: '自动签名',
           description:
-            '一旦启用，您就可以更顺利地在 Helix 上进行交易，而无需签署每笔交易。'
+            '一旦启用，您就可以更顺利地在 ZEC Perps 上进行交易，而无需签署每笔交易。'
         }
       }
     },
@@ -381,7 +381,7 @@ export default {
     },
     stockTwits: {
       startHere: '从这里开始',
-      title: '👋 初次使用 Helix？',
+      title: '👋 初次使用 ZEC Perps？',
       description: '轻松开始交易加密货币和代币化股票'
     }
   },
@@ -553,9 +553,9 @@ export default {
       acknowledge: '我理解并接受风险，愿意继续交易',
       tradesCanBePlace: '您可以在非交易时间下单，但市场重开前价格将不会更新',
       nyseMarketClosedTrade:
-        'Helix 上所有市场均可全天候交易。但需注意，该市场遵循 {nyseClosedTimes}，即协调世界时 14:30 至 21:00（UTC），夜间、周末及 NYSE 节假日休市。',
+        'ZEC Perps 上所有市场均可全天候交易。但需注意，该市场遵循 {nyseClosedTimes}，即协调世界时 14:30 至 21:00（UTC），夜间、周末及 NYSE 节假日休市。',
       marketClosedTrade:
-        'Helix 上所有市场均可全天候交易。但需注意，该市场遵循 {marketClosedTimes}。市场在每周五美东时间下午 5 点至周日美东时间下午 5 点关闭，CME 节假日关闭，以及周一至周四每日美东时间下午 5 点至 6 点之间暂停。'
+        'ZEC Perps 上所有市场均可全天候交易。但需注意，该市场遵循 {marketClosedTimes}。市场在每周五美东时间下午 5 点至周日美东时间下午 5 点关闭，CME 节假日关闭，以及周一至周四每日美东时间下午 5 点至 6 点之间暂停。'
     },
     stats: {
       low: '24 小时最低价',
@@ -595,17 +595,17 @@ export default {
       availableUSDT: '可用 USDTT',
       depositToNeptune: '存入 Neptune',
       percentageInReserve: '（15% 保留）',
-      automatedYields: 'Helix 自动收益',
+      automatedYields: 'ZEC Perps 自动收益',
       withdrawFromNeptune: '从 Neptune 提取',
       availableUsdt: '≈{peggyUsdt} USDT + {neptuneUsdt} Neptune USDT',
       apyTooltip:
         '这是 Neptune 当前为 USDT 存款提供的年化收益率。该数值会随时间变化。',
       banner:
-        'Helix 与 Neptune 合作，让您无需离开平台即可轻松赚取稳定币收益。点击 {here} 开始操作',
+        'ZEC Perps 与 Neptune 合作，让您无需离开平台即可轻松赚取稳定币收益。点击 {here} 开始操作',
       description:
-        '将稳定币存入 {link} 上的 USDT 借贷池，在不离开 Helix 的情况下自动赚取收益。当您准备交易时，资金将自动从借贷池中提取，无需额外操作。',
+        '将稳定币存入 {link} 上的 USDT 借贷池，在不离开 ZEC Perps 的情况下自动赚取收益。当您准备交易时，资金将自动从借贷池中提取，无需额外操作。',
       warningText:
-        '继续操作即表示您将资金存入一个非 Injective 控制或关联的应用程序。您需自行承担所有使用风险，并同意 Injective 无需为任何可能的损失负责。详情请参阅 Helix 的 {terms}。'
+        '继续操作即表示您将资金存入一个非 Injective 控制或关联的应用程序。您需自行承担所有使用风险，并同意 Injective 无需为任何可能的损失负责。详情请参阅 ZEC Perps 的 {terms}。'
     },
     iAssetModal: {
       cta: '开始交易',
@@ -632,8 +632,8 @@ export default {
       title: '实验性市场',
       termsAndCondition: '用户条款',
       description:
-        '您正在访问 Injective 上可用但未在 Helix 上列出的市场。请确认该 Market ID 是否为您希望交易的市场。',
-      description2: '继续操作即表示您已阅读并同意 Helix 的 {0}，并将受其约束。'
+        '您正在访问 Injective 上可用但未在 ZEC Perps 上列出的市场。请确认该 Market ID 是否为您希望交易的市场。',
+      description2: '继续操作即表示您已阅读并同意 ZEC Perps 的 {0}，并将受其约束。'
     },
     sharePnlModal: {
       markPrice: '标记价格',
@@ -675,7 +675,7 @@ export default {
     },
     modal: {
       continueToMito: '前往 Mito',
-      redirect: '进入金库将从 Helix 跳转至 Mito，您可在其中赚取收益。'
+      redirect: '进入金库将从 ZEC Perps 跳转至 Mito，您可在其中赚取收益。'
     }
   },
   markets: {
@@ -751,7 +751,7 @@ export default {
       description:
         '我们正在升级钱包服务商，您当前使用的钱包即将停止支持。强烈建议您按照以下指引完成钱包迁移。',
       migrateDescription:
-        '我们升级了登录方式，使其更快速、更简便、更安全。要继续使用 Helix，请连接更新后的钱包迁移资产，仅需片刻，您的资金始终安全无虞。'
+        '我们升级了登录方式，使其更快速、更简便、更安全。要继续使用 ZEC Perps，请连接更新后的钱包迁移资产，仅需片刻，您的资金始终安全无虞。'
     },
     option: {
       leap: 'Leap',
@@ -781,7 +781,7 @@ export default {
     volume: '交易量',
     totalPoints: '总积分',
     lastUpdatedAt: '最近更新时间：',
-    myTotalPoints: '我在 Helix 的总积分',
+    myTotalPoints: '我在 ZEC Perps 的总积分',
     paginationDetails: '{from}-{to} 共 {total}',
     description: '第一赛季已结束。有关积分的更多信息，请参见',
     leagues: {
@@ -804,13 +804,13 @@ export default {
       '目前有一项治理提案拟强制结算该市场。建议您尽快平掉持仓，否则将在结算时按标记价格被强平。',
     settlePerpMarketBannerNewLaunch:
       '目前，WTI PERP 市场正在实施一项强制结算治理提案。建议您立即平仓，否则您的仓位将按结算时的标记价格强制结算。该市场结算完成后，将推出一个新的到期期货市场。',
-    pointsS1Ended: 'Helix 积分第一赛季已结束。感谢您的参与，敬请期待更多更新！',
+    pointsS1Ended: 'ZEC Perps 积分第一赛季已结束。感谢您的参与，敬请期待更多更新！',
     kado: {
       getStarted: '立即开始',
-      title: 'Helix 2.0 全新上线！探索焕然一新的交易体验。'
+      title: 'ZEC Perps 2.0 全新上线！探索焕然一新的交易体验。'
     },
     iAssets: {
-      title: '在 Helix 上交易 iAssets',
+      title: '在 ZEC Perps 上交易 iAssets',
       description:
         '使用加密货币交易股票，实现更快、更低成本、更透明的交易方式——融合传统市场与去中心化金融的力量。'
     },
@@ -820,20 +820,20 @@ export default {
       takeSurvey: '参与问卷',
       loveFeedback: '我们非常希望听到您的反馈！',
       thankYouEnd:
-        '填写时间不超过数分钟，您的意见将帮助我们优化 Helix 的使用体验。',
+        '填写时间不超过数分钟，您的意见将帮助我们优化 ZEC Perps 的使用体验。',
       thankYouBeginning:
-        '感谢您使用 Helix。我们一直致力于改进产品体验，期待您的宝贵建议！本问卷大约需时不超过 '
+        '感谢您使用 ZEC Perps。我们一直致力于改进产品体验，期待您的宝贵建议！本问卷大约需时不超过 '
     },
     newFeature: {
       cta: '交易 TradFi',
       title: '全新上线 TradFi 股票指数！',
       description:
-        '首次实现链上交易最大规模的上市股票，统一指数接入。全天候 24/7 访问传统金融市场，最低手续费，最高 25 倍杠杆，仅在 Helix。'
+        '首次实现链上交易最大规模的上市股票，统一指数接入。全天候 24/7 访问传统金融市场，最低手续费，最高 25 倍杠杆，仅在 ZEC Perps。'
     },
     leaderboard: {
-      currentCompetitionLink: 'Helix 奖池高达 $50K！',
+      currentCompetitionLink: 'ZEC Perps 奖池高达 $50K！',
       currentCompetitionTitle:
-        '参与 Helix 交易挑战，争夺属于您的 {linkDescription}',
+        '参与 ZEC Perps 交易挑战，争夺属于您的 {linkDescription}',
       gwagon: {
         blog: 'blog',
         ended: '已结束',
@@ -853,7 +853,7 @@ export default {
         ended: '已结束',
         title: '掌控资产，把握未来。',
         description:
-          '参与 Helix 交易挑战，瓜分 $50,000 奖池。活动时间为 2025 年 2 月 21 日 18:00 UTC 至 3 月 3 日 18:00 UTC。每累计 $1,000 的交易量可获得一次抽奖资格，赢取 $1,000。更多详情请访问 {blog}'
+          '参与 ZEC Perps 交易挑战，瓜分 $50,000 奖池。活动时间为 2025 年 2 月 21 日 18:00 UTC 至 3 月 3 日 18:00 UTC。每累计 $1,000 的交易量可获得一次抽奖资格，赢取 $1,000。更多详情请访问 {blog}'
       }
     }
   },
@@ -866,7 +866,7 @@ export default {
     referAndEarn: '邀请赚奖励',
     confirmReferral: '确认关联邀请',
     referralDetails: '邀请详情',
-    scanToJoin: '扫码注册 Helix，或',
+    scanToJoin: '扫码注册 ZEC Perps，或',
     yourReferralLink: '您的邀请链',
     checkAvailability: '检查可用性',
     affiliatedAddress: '关联地址',
@@ -907,7 +907,7 @@ export default {
       step2Title: '邀请好友赚取 40%',
       step1Title: '分享您的邀请链接',
       step2Description: '您可以邀请任意数量的好友。',
-      description1: '邀请朋友们使用 Helix 交易',
+      description1: '邀请朋友们使用 ZEC Perps 交易',
       step1Description: '您可以生成专属邀请链接。',
       description2: ' 并获得引荐好友手续费的 40% 作为佣金。',
       step3Description: '奖励将自动发放至您的钱包。'
@@ -915,9 +915,9 @@ export default {
     shareModal: {
       title: '邀请您的好友！',
       customizeYourText: '自定义您的文案',
-      description: '扫码加入 Helix，一起交易吧！',
+      description: '扫码加入 ZEC Perps，一起交易吧！',
       defaultText:
-        '赚取奖励，随时提现。邀请好友加入 Helix 交易并赚取他们手续费的 40% 作为佣金。'
+        '赚取奖励，随时提现。邀请好友加入 ZEC Perps 交易并赚取他们手续费的 40% 作为佣金。'
     }
   },
   lpRewards: {
@@ -948,7 +948,7 @@ export default {
     totalRewardsAllTime: '历史总奖励',
     totalRewardsThisRound: '本轮总奖励',
     totalRewardsOfRound: '第 {round} 轮总奖励',
-    helixLpRewardsRound: 'Helix 第 {round} 轮 LP 奖励',
+    helixLpRewardsRound: 'ZEC Perps 第 {round} 轮 LP 奖励',
     description: '通过交易不同现货市场赚取奖励',
     rewardsPending:
       'LP 奖励处理中：该交易对的奖励正在结算，资金发放可能在轮次结束后一周内完成。',
@@ -1009,7 +1009,7 @@ export default {
       pnl: {
         title: '交易盈亏',
         tooltip:
-          '投资组合页面的盈亏计算反映了自 2024 年 5 月 29 日以来在 Helix 上开平仓所产生的大致已实现盈亏。该计算仅供参考，不应作为税务申报的依据。'
+          '投资组合页面的盈亏计算反映了自 2024 年 5 月 29 日以来在 ZEC Perps 上开平仓所产生的大致已实现盈亏。该计算仅供参考，不应作为税务申报的依据。'
       }
     },
     balances: {
@@ -1112,7 +1112,7 @@ export default {
       durationDescription: '自动签名功能激活后有效期为 3 天',
       pageTitle: '自动签名：自动批准交易',
       content1: {
-        description1: '启用后，您可以在使用 Helix 时无需手动签名',
+        description1: '启用后，您可以在使用 ZEC Perps 时无需手动签名',
         description2: '每笔交易，最长持续 3 天'
       },
       content2: {
@@ -1300,7 +1300,7 @@ export default {
     blog: 'Blog',
     v2: ' Version 2.0',
     support: '支持',
-    docs: 'Helix 文档',
+    docs: 'ZEC Perps 文档',
     explorer: '区块浏览器',
     resources: '资源',
     community: '社区',
@@ -1310,7 +1310,7 @@ export default {
     privacyPolicy: '隐私政策',
     apiDocumentation: 'API 文档',
     termsAndConditions: '用户条款',
-    helixProvides: '注：Helix 可在 Injective DAO 批准的多个市场中提供做市返佣。'
+    helixProvides: '注：ZEC Perps 可在 Injective DAO 批准的多个市场中提供做市返佣。'
   },
   tradingBots: {
     all: '全部',
@@ -1404,9 +1404,9 @@ export default {
     disclaimer:
       '我已阅读并同意风险免责声明，并理解所有参数选择和投资决策由用户自行承担。',
     description:
-      '这是您在 Helix 上自动交易的控制中心。您可以监控运行中的机器人、追踪 LP 奖励，并查看社区热门策略以获得灵感。',
+      '这是您在 ZEC Perps 上自动交易的控制中心。您可以监控运行中的机器人、追踪 LP 奖励，并查看社区热门策略以获得灵感。',
     topPerformersDescription:
-      '向成功者学习。查看哪些策略和参数当前在 Helix 上表现最佳，并据此优化自己的方案或复制创建新机器人。',
+      '向成功者学习。查看哪些策略和参数当前在 ZEC Perps 上表现最佳，并据此优化自己的方案或复制创建新机器人。',
     botType: {
       spotGrid: '现货网格',
       futuresGrid: '合约网格',
@@ -1496,14 +1496,14 @@ export default {
     myStats: '我的数据',
     title: '排行榜',
     viewMore: '查看更多',
-    helix: 'helixapp.com',
+    helix: 'zecperps.app',
     timestamp: '时间戳',
     startTrading: '开始交易',
     privacyPolicy: '隐私政策',
     rulesTermsAndConditions: '规则、条款与条件',
     refresh: '排行榜每小时整点更新一次',
-    description: 'Helix 根据链上交易盈利情况（PnL）对交易员进行排名',
-    tradeAndWin: '还没有上榜？快来 Helix 交易赢取排名吧！',
+    description: 'ZEC Perps 根据链上交易盈利情况（PnL）对交易员进行排名',
+    tradeAndWin: '还没有上榜？快来 ZEC Perps 交易赢取排名吧！',
     blocked:
       '美国、英国及官方 {terms} 中列出的其他部分国家/地区的居民无法参与或赢得本次竞赛。',
     tabs: {
@@ -1586,7 +1586,7 @@ export default {
     subscribe: '订阅提醒',
     subscribeDescription: '通过 Notifi 获取实时通知',
     governanceDescription: '查看最新链升级的详细信息',
-    footer: '我们正在优化 Helix。感谢您的耐心，平台将很快恢复服务！',
+    footer: '我们正在优化 ZEC Perps。感谢您的耐心，平台将很快恢复服务！',
     description: '我们正在进行系统更新。在此期间，部分功能将暂时不可用。'
   },
   feeDiscounts: {
@@ -1634,7 +1634,7 @@ export default {
     pendingMaxCampaignRewards: '本轮总奖励分配',
     myRewardPoints: '我的奖励积分 / 总奖励积分',
     stakeTotalToReceiveFullAmount: '质押共计 {total} INJ 以领取全部奖励',
-    sunset: '感谢参与 Trade & Earn！敬请期待更多面向 Helix 用户的激励活动。',
+    sunset: '感谢参与 Trade & Earn！敬请期待更多面向 ZEC Perps 用户的激励活动。',
     pendingMaxCampaignRewardsTooltip:
       '上一个周期分配的 INJ 总额。奖励将在归属期结束时发放。',
     myRewardPointsTooltip:
@@ -1651,13 +1651,13 @@ export default {
     trustedByTheBest: '值得信赖的选择',
     heroTitle: '真正链上的机构级金融平台',
     allRightsReserved: 'Injective Labs. All Rights Reserved.',
-    modalDescription: '直接联系 Helix 的机构服务团队。',
-    whyFinancialInstitutionsChooseHelix: '为什么金融机构选择 Helix',
+    modalDescription: '直接联系 ZEC Perps 的机构服务团队。',
+    whyFinancialInstitutionsChooseHelix: '为什么金融机构选择 ZEC Perps',
     heroSubtitle:
       '在唯一完全去中心化的网络中接触无限加密资产、永续合约和结构化产品。',
     permisionedMarketsTitle: '许可市场',
     permisionedMarketsBody:
-      'Helix 独家提供机构级许可市场通道，使您可与专业认证的交易对手无缝互动。',
+      'ZEC Perps 独家提供机构级许可市场通道，使您可与专业认证的交易对手无缝互动。',
     multiAssetSupportTitle: '支持多种资产',
     multiAssetSupportBody:
       '跨多个区块链网络访问多样的链上资产、衍生品和结构化产品。',
@@ -1674,7 +1674,7 @@ export default {
       '使用非托管平台，配合最严格的安全措施，确保您的资产始终掌握在您自己手中。',
     superiorInfrastructureTitle: '卓越基础设施',
     superiorInfrastructureBody:
-      '利用 Helix 为最专业金融机构和交易员打造的定制化基础设施。',
+      '利用 ZEC Perps 为最专业金融机构和交易员打造的定制化基础设施。',
     form: {
       email: 'Email',
       company: '公司',
@@ -1748,17 +1748,17 @@ export default {
         termsAndCondition: '使用条款',
         title: '此外，您在此声明、保证并同意以下内容：',
         acknowledge_1:
-          '您不是美国（关于永续合约交易）、英国（除非为投资专业人士）或 Helix 使用条款中定义的受限地区的居民、所在位置、注册机构或注册代理。',
+          '您不是美国（关于永续合约交易）、英国（除非为投资专业人士）或 ZEC Perps 使用条款中定义的受限地区的居民、所在位置、注册机构或注册代理。',
         acknowledge_2:
-          '您当前以及未来在位于美国（关于永续合约交易）、英国（除非为投资专业人士）或受限地区时不会访问本网站或使用 helixapp.com。',
+          '您当前以及未来在位于美国（关于永续合约交易）、英国（除非为投资专业人士）或受限地区时不会访问本网站或使用 zecperps.app。',
         acknowledge_3:
           '您不会现在或未来使用虚拟专用网络（VPN）或其他方式隐藏你来自受限地区的真实位置。',
         acknowledge_4:
-          '您在所在司法辖区的法律允许下合法访问本网站并在 helixapp.com 上交易。',
+          '您在所在司法辖区的法律允许下合法访问本网站并在 zecperps.app 上交易。',
         acknowledge_5:
           '您了解使用杠杆、参与永续合约和交易数字资产所涉及的风险。',
         disclaimerNote:
-          '连接钱包即表示您已阅读、理解并同意 Helix 的 {0} 及 Injective Labs 的 {1}，并将受其约束。'
+          '连接钱包即表示您已阅读、理解并同意 ZEC Perps 的 {0} 及 Injective Labs 的 {1}，并将受其约束。'
       },
       postOnlyMode: {
         title: '仅挂单模式！',
@@ -1767,9 +1767,9 @@ export default {
       },
       geoRestricted: {
         cta: '我知道了',
-        title: 'Helix 暂不支持你所在地区',
+        title: 'ZEC Perps 暂不支持你所在地区',
         description:
-          '由于监管要求，我们暂无法在你所在地区提供 Helix 服务。我们正在努力拓展服务范围并确保合规。感谢你的关注，期待你加入我们的全球社区。如有未平仓头寸，请前往资产页进行处理。'
+          '由于监管要求，我们暂无法在你所在地区提供 ZEC Perps 服务。我们正在努力拓展服务范围并确保合规。感谢你的关注，期待你加入我们的全球社区。如有未平仓头寸，请前往资产页进行处理。'
       },
       devMode: {
         connect: '连接',

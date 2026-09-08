@@ -14,15 +14,15 @@ export default {
     settlePerpMarketBannerNewLaunch:
       'There is currently a live governance proposal to force settle the WTI PERP market. You are encouraged to close open positions, or your position will be force settled at the mark price at the time of settlement. After this market is settled, a new expiry futures market will be launched.',
     pointsS1Ended:
-      'Helix Points Season 1 has wrapped up. Thank you for your participation, and stay tuned for more updates!',
+      'ZEC Perps Points Season 1 has wrapped up. Thank you for your participation, and stay tuned for more updates!',
 
     kado: {
       getStarted: 'Get started',
-      title: 'Introducing Helix 2.0! Discover a whole new trading experience.'
+      title: 'Introducing ZEC Perps 2.0! Discover a whole new trading experience.'
     },
 
     iAssets: {
-      title: 'Trade iAssets on Helix',
+      title: 'Trade iAssets on ZEC Perps',
       description:
         'Trade stocks with crypto for faster, cheaper, and more transparent transactions - combining traditional markets with the power of decentralized finance.'
     },
@@ -33,22 +33,22 @@ export default {
       takeSurvey: 'Take the survey',
       loveFeedback: "We'd love to hear your feedback!",
       thankYouEnd:
-        'to complete and the information will help us know how to improve your future experience on Helix.',
+        'to complete and the information will help us know how to improve your future experience on ZEC Perps.',
       thankYouBeginning:
-        'Thank you for using Helix. We are constantly improving our products for our users and we’d love to hear from you! The survey should take fewer than '
+        'Thank you for using ZEC Perps. We are constantly improving our products for our users and we’d love to hear from you! The survey should take fewer than '
     },
 
     newFeature: {
       cta: 'Trade TradFi',
       title: 'Introducing the TradFi Stocks Index!',
       description:
-        'Trade the largest publicly traded stocks on-chain via one integrated index for the first time. Access TradFi 24/7 with the lowest fees and up to 25X leverage only on Helix.'
+        'Trade the largest publicly traded stocks on-chain via one integrated index for the first time. Access TradFi 24/7 with the lowest fees and up to 25X leverage only on ZEC Perps.'
     },
 
     leaderboard: {
-      currentCompetitionLink: '$50K prize pool on Helix!',
+      currentCompetitionLink: '$50K prize pool on ZEC Perps!',
       currentCompetitionTitle:
-        'Trade on Helix and compete for your share of a {linkDescription}',
+        'Trade on ZEC Perps and compete for your share of a {linkDescription}',
 
       gwagon: {
         blog: 'blog',
@@ -69,7 +69,7 @@ export default {
         ended: 'Ended',
         title: 'Own Your Assets, Control Your Future.',
         description:
-          'Compete for your share of a $50K prize pool on Helix. From February 21st, 2025 at 6pm UTC to March 3rd, 2025 at 6pm UTC, you can trade for a chance to win $1,000 from a $50k prize pool, through a random draw. Every $1,000 in trading volume earns an entry. For more details, visit the {blog}'
+          'Compete for your share of a $50K prize pool on ZEC Perps. From February 21st, 2025 at 6pm UTC to March 3rd, 2025 at 6pm UTC, you can trade for a chance to win $1,000 from a $50k prize pool, through a random draw. Every $1,000 in trading volume earns an entry. For more details, visit the {blog}'
       }
     }
   }

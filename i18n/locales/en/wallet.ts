@@ -50,7 +50,7 @@ export default {
       description:
         'We are upgrading our wallet provider and your current one is being deprecated. We strongly encourage you to migrate your wallet by following this',
       migrateDescription:
-        'We’ve upgraded how you sign in to make things faster, simpler, and more secure. To continue using Helix, please connect your updated wallet to move your assets over. It only takes a moment, and your funds are always safe.'
+        'We’ve upgraded how you sign in to make things faster, simpler, and more secure. To continue using ZEC Perps, please connect your updated wallet to move your assets over. It only takes a moment, and your funds are always safe.'
     },
 
     option: {

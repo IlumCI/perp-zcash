@@ -1,17 +1,17 @@
-const baseUrl = process.env.VITE_BASE_URL || 'https://pdaas.injective.com'
+const baseUrl = process.env.VITE_BASE_URL || 'https://zecperps.app'
 
 export const metaTags = {
   title: process.env.VITE_NAME
     ? process.env.VITE_NAME
-    : 'Injective PDaaS | Perp DEX As A Service',
+    : 'ZEC Perps | Trade Zcash Perpetual Futures',
   description:
-    'Build your own decentralized spot and derivatives exchange powered by Injective with low fees and gas free execution',
+    'Trade Zcash (ZEC) perpetual futures, long and short, on an on-chain central-limit order book powered by Injective.',
   keywords:
-    'injective protocol, dapp, decentralized app, cryptocurrency, cryptocurrency exchange, exchange, ethereum, erc20, futures, perpetuals, futures protocol, cosmos, spot trading, derivatives, injective, ibc, cross-chain, pdaas',
-  author: 'InjectiveLabs',
+    'zcash, zec, zec perps, perpetual futures, perpetuals, injective, decentralized exchange, dex, derivatives, on-chain order book, crypto trading, long short',
+  author: 'ZEC Perps',
   url: baseUrl,
-  shortName: 'PDaaS',
-  twitterHandle: '@InjectiveLabs',
+  shortName: 'ZEC Perps',
+  twitterHandle: '',
   ogImage: `${baseUrl}/images/og.jpeg`
 }
 
@@ -79,8 +79,8 @@ export const pwaMetaTags = {
   ogUrl: metaTags.url,
   ogImage: metaTags.ogImage,
   twitterCard: 'summary_large_image',
-  twitterSite: '@InjectiveLabs',
-  twitterCreator: '@InjectiveLabs'
+  twitterSite: '',
+  twitterCreator: ''
 }
 
 export const manifestMetaTags = {

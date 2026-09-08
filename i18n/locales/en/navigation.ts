@@ -38,7 +38,7 @@ export default {
     blog: 'Blog',
     v2: ' Version 2.0',
     support: 'Support',
-    docs: 'Helix Docs',
+    docs: 'ZEC Perps Docs',
     explorer: 'Explorer',
     resources: 'Resources',
     community: 'Community',
@@ -49,6 +49,6 @@ export default {
     apiDocumentation: 'API Documentation',
     termsAndConditions: 'Terms & Conditions',
     helixProvides:
-      'Note: Helix is able to provide maker rebates across a number of markets as approved via the Injective DAO.'
+      'Note: ZEC Perps is able to provide maker rebates across a number of markets as approved via the Injective DAO.'
   }
 }
