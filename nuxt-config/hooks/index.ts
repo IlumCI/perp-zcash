@@ -1,8 +1,5 @@
 import { TradePage, TradeSubPage } from './../../types/page'
-import {
-  verifiedSpotMarketIdMap,
-  verifiedDerivateMarketIdMap
-} from './../../app/json'
+import { ZEC_ONLY_DERIVATIVE_MARKET_MAP } from './../../app/data/zcash'
 import type { NitroConfig } from 'nitropack'
 import type { NuxtHooks } from 'nuxt/schema'
 
@@ -42,10 +39,10 @@ export default {
       return
     }
 
+    // ZEC-only venue: prerender only the Zcash perp route (no spot, no other perps).
     nitroConfig.prerender.routes = [
       ...nitroConfig.prerender.routes,
-      ...Object.keys(verifiedSpotMarketIdMap).map((s) => `/spot/${s}`),
-      ...Object.keys(verifiedDerivateMarketIdMap).map((s) => `/futures/${s}`)
+      ...Object.keys(ZEC_ONLY_DERIVATIVE_MARKET_MAP).map((s) => `/futures/${s}`)
     ]
   }
 } as NuxtHooks
