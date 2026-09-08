@@ -100,6 +100,13 @@ Config: `VITE_SHIELDED_ENABLED`, `VITE_SHIELDED_MODE`, `VITE_RELAYER_URL`,
 - `contracts/anchor/` — CosmWasm commitment anchor (Injective testnet). See its README.
 - `app/data/zcash.ts` — the ZEC market constants and ZEC-only allowlist.
 
+## Roadmap
+
+Staged path from the shipped MVP to a private, decentralized ZEC perp - live
+execution and non-custodial mode, zk-verified reveal, trustless (threshold)
+sealing, a shielded collateral pool for post-trade privacy, and
+decentralization. See `ROADMAP.md`.
+
 ## References
 
 Shielded design grounded in: FairTraDEX (arXiv:2202.06384), SPEEDEX
