@@ -1,0 +1,44 @@
+ZEC Perps - shielded relayer, dry-run transcript
+================================================
+
+This is a real run of the relayer (relayer/) in DRY_RUN mode: sealed orders are
+committed, verified, batched, revealed and "executed" without broadcasting to
+Injective (so it runs with no funds). REVEAL_WINDOW_MS=5000 for the demo.
+
+--- relayer startup (server) ---
+zec-perps relayer listening on :8891
+  network=mainnet market=0xef0dd633da52cfc21db866b05463c8b43c02265b86bf9257a5d39848cd2eea11
+  dryRun=true anchor=none revealWindowMs=5000
+  DRY_RUN: sealed orders are verified + batched but NOT broadcast to Injective.
+
+--- client: seal a ZEC/USDT-PERP order, then poll it (client) ---
+HEALTH { ok: true, dryRun: true, network: 'mainnet',
+         marketId: '0xef0dd633da52cfc21db866b05463c8b43c02265b86bf9257a5d39848cd2eea11',
+         anchorMode: 'none' }
+
+# A sealed order is accepted: only the commitment + sealed blob are sent.
+SEAL 200 { id: 'ca7d16d0-4c03-46b6-99b4-165e84f04057',
+           batchId: '096397f4-758c-4e73-9248-402bfceead54',
+           revealAt: 1788891486300 }
+
+# Negative test: a commitment that does not match the sealed payload is rejected.
+BAD-SEAL 400 { error: 'commitment does not match sealed order' }
+
+# The order stays "sealed" (withheld from the book) until the reveal window closes.
+STATUS sealed
+STATUS sealed
+STATUS sealed
+STATUS submitted dry-run:801b0702a103
+
+--- relayer batch execution (server) ---
+[batch 096397f4] executed ca7d16d0 tx=dry-run:801b0702a103
+
+What this shows
+---------------
+- Pre-trade secrecy: the order is held as a commitment for the reveal window; its
+  side/price/size are not on the public book during [seal, reveal).
+- Integrity: the relayer verifies H(order || salt) == commitment before executing;
+  a mismatched commitment is rejected (the 400 above).
+- Batched execution: orders sealed in the same window execute together at reveal.
+- With DRY_RUN=false and a funded omnibus key, the same path submits a real
+  MsgCreateDerivativeLimitOrder to Injective's ZEC/USDT perp.

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ZEC Perps - Shielded order flow (demo)</title>
+    <style>
+      :root {
+        --bg: #0d0e12;
+        --panel: #14151a;
+        --panel-2: #1b1d24;
+        --border: #262932;
+        --text: #e8e9ed;
+        --muted: #9aa0ad;
+        --accent: #f4b728; /* zcash-ish yellow */
+        --long: #2ecc71;
+        --short: #e74c3c;
+        --blue: #4c9aff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 14px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      }
+      .wrap { max-width: 980px; margin: 0 auto; padding: 24px 16px 48px; }
+      header { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+      h1 { font-size: 20px; margin: 0; letter-spacing: -0.3px; }
+      .tag {
+        font-size: 11px; color: #0d0e12; background: var(--accent);
+        padding: 2px 8px; border-radius: 999px; font-weight: 700;
+      }
+      .sub { color: var(--muted); margin: 6px 0 22px; }
+      .grid { display: grid; grid-template-columns: 320px 1fr; gap: 16px; }
+      @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+      .card {
+        background: var(--panel); border: 1px solid var(--border);
+        border-radius: 12px; padding: 16px;
+      }
+      .card h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin: 0 0 12px; }
+      label { display: block; font-size: 12px; color: var(--muted); margin: 10px 0 4px; }
+      input, select {
+        width: 100%; background: var(--panel-2); border: 1px solid var(--border);
+        color: var(--text); border-radius: 8px; padding: 9px 10px; font-size: 14px;
+      }
+      .side { display: flex; gap: 8px; }
+      .side button {
+        flex: 1; padding: 9px; border-radius: 8px; border: 1px solid var(--border);
+        background: var(--panel-2); color: var(--muted); cursor: pointer; font-weight: 600;
+      }
+      .side button.long.active { background: rgba(46,204,113,0.15); color: var(--long); border-color: var(--long); }
+      .side button.short.active { background: rgba(231,76,60,0.15); color: var(--short); border-color: var(--short); }
+      .seal {
+        margin-top: 16px; width: 100%; padding: 11px; border-radius: 8px; border: 0;
+        background: var(--accent); color: #0d0e12; font-weight: 700; font-size: 14px; cursor: pointer;
+      }
+      .seal:disabled { opacity: 0.5; cursor: default; }
+      .orders { display: flex; flex-direction: column; gap: 10px; }
+      .order {
+        background: var(--panel-2); border: 1px solid var(--border); border-radius: 10px; padding: 12px;
+      }
+      .order .row { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+      .hash { color: var(--accent); word-break: break-all; }
+      .hidden-val { color: var(--muted); letter-spacing: 2px; }
+      .status { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+      .st-sealed { color: var(--muted); background: rgba(154,160,173,0.12); }
+      .st-revealing { color: var(--blue); background: rgba(76,154,255,0.12); }
+      .st-submitted { color: var(--long); background: rgba(46,204,113,0.12); }
+      .detail { margin-top: 8px; font-size: 12px; color: var(--muted); }
+      .detail b { color: var(--text); font-weight: 600; }
+      .verify-ok { color: var(--long); font-weight: 700; }
+      .empty { color: var(--muted); font-size: 13px; }
+      .note { font-size: 12px; color: var(--muted); }
+      .note b { color: var(--text); }
+      ul.note { padding-left: 18px; margin: 8px 0 0; }
+      ul.note li { margin: 6px 0; }
+      .pill { display:inline-block; font-size: 11px; color: var(--accent); border:1px solid var(--border); padding:1px 6px; border-radius:6px; }
+      footer { margin-top: 22px; color: var(--muted); font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>ZEC Perps - Shielded order flow</h1>
+        <span class="tag">DEMO</span>
+      </header>
+      <p class="sub">
+        A self-contained visualization of the commit-reveal mechanism, using the
+        same SHA-256 commitment as <span class="mono">app/shielded/commitment.ts</span>.
+        No wallet, no chain - it shows how an order stays hidden until its reveal window closes.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h2>Place a shielded order</h2>
+          <div class="side">
+            <button id="long" class="long active" type="button">Long</button>
+            <button id="short" class="short" type="button">Short</button>
+          </div>
+          <label>Price (USDT)</label>
+          <input id="price" type="number" value="42.50" step="0.01" />
+          <label>Size (ZEC)</label>
+          <input id="size" type="number" value="10" step="0.1" />
+          <label>Reveal window</label>
+          <select id="window">
+            <option value="5">5 seconds</option>
+            <option value="10" selected>10 seconds</option>
+            <option value="20">20 seconds</option>
+          </select>
+          <button id="seal" class="seal" type="button">Seal order</button>
+          <p class="note" style="margin-top:14px">
+            On seal, the client computes
+            <span class="mono">commitment = SHA-256(order || salt)</span> and
+            publishes only that. The order's side/price/size stay hidden until reveal.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Sealed orders</h2>
+          <div id="orders" class="orders">
+            <p class="empty">No sealed orders yet. Seal one to watch the lifecycle.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:16px">
+        <h2>What this demonstrates (honestly)</h2>
+        <ul class="note">
+          <li><b>Pre-trade secrecy</b> <span class="pill">real</span> - during <span class="mono">[seal, reveal)</span> only the commitment is public; the order is off the book. At reveal it becomes a normal, public Injective order.</li>
+          <li><b>Integrity</b> <span class="pill">real</span> - anyone can recompute <span class="mono">SHA-256(revealed order || salt)</span> and check it equals the earlier commitment (shown per order below).</li>
+          <li><b>Identity unlinkability</b> <span class="pill">relayer mode</span> - in the app, a relayer executes the revealed order from a pooled account; not shown here.</li>
+          <li><b>Post-trade position privacy</b> <span class="pill">not provided</span> - Injective positions/funding/liquidations stay public; real per-trader privacy needs a shielded pool with zk accounting (roadmap).</li>
+        </ul>
+      </div>
+
+      <footer>ZEC Perps - Injective ZEC/USDT perp, marketId 0xef0dd633…eea11. Demo aid; not the live app.</footer>
+    </div>
+
+    <script>
+      const MARKET_ID =
+        '0xef0dd633da52cfc21db866b05463c8b43c02265b86bf9257a5d39848cd2eea11'
+      let side = 'long'
+
+      const $ = (id) => document.getElementById(id)
+      $('long').onclick = () => setSide('long')
+      $('short').onclick = () => setSide('short')
+      function setSide(s) {
+        side = s
+        $('long').classList.toggle('active', s === 'long')
+        $('short').classList.toggle('active', s === 'short')
+      }
+
+      const toHex = (bytes) =>
+        Array.from(bytes).map((b) => b.toString(16).padStart(2, '0')).join('')
+      const randomHex = (n) => {
+        const b = new Uint8Array(n)
+        crypto.getRandomValues(b)
+        return toHex(b)
+      }
+      // Mirrors app/shielded/commitment.ts canonicalizeOrder + sha256Hex.
+      const canonicalize = (p, salt, nonce) =>
+        JSON.stringify({
+          marketId: p.marketId,
+          side: p.side,
+          price: p.price,
+          quantity: p.quantity,
+          margin: p.margin,
+          reduceOnly: p.reduceOnly,
+          salt,
+          nonce
+        })
+      async function sha256Hex(input) {
+        const data = new TextEncoder().encode(input)
+        const digest = await crypto.subtle.digest('SHA-256', data)
+        return toHex(new Uint8Array(digest))
+      }
+
+      const ordersEl = $('orders')
+      let hasOrders = false
+
+      $('seal').onclick = async () => {
+        const price = $('price').value || '0'
+        const quantity = $('size').value || '0'
+        const params = {
+          marketId: MARKET_ID,
+          slug: 'zec-usdt-perp',
+          side,
+          price,
+          quantity,
+          margin: (Number(price) * Number(quantity)).toFixed(2),
+          reduceOnly: false
+        }
+        const salt = randomHex(32)
+        const nonce = randomHex(16)
+        const commitment = await sha256Hex(canonicalize(params, salt, nonce))
+        const windowMs = Number($('window').value) * 1000
+        const revealAt = Date.now() + windowMs
+
+        if (!hasOrders) { ordersEl.innerHTML = ''; hasOrders = true }
+
+        const el = document.createElement('div')
+        el.className = 'order'
+        el.innerHTML = `
+          <div class="row">
+            <span class="mono hash">${commitment.slice(0, 24)}…</span>
+            <span class="status st-sealed">SEALED</span>
+          </div>
+          <div class="detail order-body">
+            side/price/size: <span class="hidden-val">•••• hidden ••••</span>
+            &nbsp;·&nbsp; reveals in <b class="cd">${Math.ceil(windowMs / 1000)}</b>s
+          </div>`
+        ordersEl.prepend(el)
+
+        const statusEl = el.querySelector('.status')
+        const bodyEl = el.querySelector('.order-body')
+        const timer = setInterval(async () => {
+          const left = Math.max(0, Math.ceil((revealAt - Date.now()) / 1000))
+          const cd = el.querySelector('.cd')
+          if (cd) cd.textContent = left
+          if (left > 0) return
+          clearInterval(timer)
+          statusEl.className = 'status st-revealing'
+          statusEl.textContent = 'REVEALING'
+          const ok = (await sha256Hex(canonicalize(params, salt, nonce))) === commitment
+          setTimeout(() => {
+            statusEl.className = 'status st-submitted'
+            statusEl.textContent = 'SUBMITTED'
+            bodyEl.innerHTML =
+              `<b>${params.side.toUpperCase()}</b> ${params.quantity} ZEC @ ${params.price} USDT ` +
+              `(margin ${params.margin}) &nbsp;·&nbsp; ` +
+              `<span class="verify-ok">H(order‖salt) == commitment ✓</span>`
+          }, 700)
+        }, 250)
+      }
+    </script>
+  </body>
+</html>

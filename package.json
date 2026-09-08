@@ -32,7 +32,7 @@
   },
   "lint-staged": {
     "**/*.{js,ts,vue,html},!public/chart/**/*.{js,css,ts}": [
-      "eslint --max-warnings 0 --no-ignore"
+      "eslint --max-warnings 0 --no-ignore --no-warn-ignored"
     ],
     "*.{css,vue}": "stylelint"
   },
